@@ -1,9 +1,3 @@
-const logoLink = document.getElementById("logo-link");
-
-logoLink?.addEventListener("click", () => {
-    sessionStorage.removeItem("introPlayed");
-});
-
 const intro=document.getElementById('intro');
 const header=document.querySelector('.header');
 const hero=document.querySelector('.hero');
