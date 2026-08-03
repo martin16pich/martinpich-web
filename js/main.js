@@ -1,3 +1,8 @@
+const logoLink = document.getElementById("logo-link");
+
+logoLink?.addEventListener("click", () => {
+    sessionStorage.removeItem("introPlayed");
+});
 
 const intro=document.getElementById('intro');
 const header=document.querySelector('.header');
@@ -16,16 +21,36 @@ function reveal(){
   sessionStorage.setItem('introPlayed','1');
 }
 
-if(sessionStorage.getItem('introPlayed')){
-  intro.remove();
-  header.classList.remove('hidden');
-  hero.classList.remove('hidden');
-  header.classList.add('show');
-  hero.classList.add('show');
-}else{
-  document.body.style.overflow='hidden';
-  setTimeout(()=>{
-    document.body.style.overflow='auto';
-    reveal();
-  },1000);
+const firstVisit = !sessionStorage.getItem('introPlayed');
+
+if (firstVisit) {
+
+    document.body.style.overflow = 'hidden';
+
+    setTimeout(() => {
+
+        reveal();
+
+    }, 1000);
+
+} else {
+
+    intro.remove();
+
+    header.classList.remove('hidden');
+    hero.classList.remove('hidden');
+
+    header.style.transition = "none";
+    hero.style.transition = "none";
+
+    header.classList.add('show');
+    hero.classList.add('show');
+
+    requestAnimationFrame(() => {
+        header.style.transition = "";
+        hero.style.transition = "";
+    });
+
+    document.body.style.overflow = 'hidden';
+
 }
