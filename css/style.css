@@ -286,7 +286,7 @@ body{
 }
 
 .navigation{
-    display:none;
+    display:flex;
 }
 
 .hero{
@@ -346,7 +346,7 @@ body{
 
 .navigation{
 
-    display:none;
+    display:flex;
 
 }
 
