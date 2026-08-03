@@ -1,0 +1,31 @@
+
+const intro=document.getElementById('intro');
+const header=document.querySelector('.header');
+const hero=document.querySelector('.hero');
+
+function reveal(){
+  intro.classList.add('animate');
+  setTimeout(()=>{
+    header.classList.remove('hidden');
+    hero.classList.remove('hidden');
+    header.classList.add('show');
+    hero.classList.add('show');
+  },1700);
+  setTimeout(()=>intro.classList.add('fade'),2200);
+  setTimeout(()=>intro.remove(),3000);
+  sessionStorage.setItem('introPlayed','1');
+}
+
+if(sessionStorage.getItem('introPlayed')){
+  intro.remove();
+  header.classList.remove('hidden');
+  hero.classList.remove('hidden');
+  header.classList.add('show');
+  hero.classList.add('show');
+}else{
+  document.body.style.overflow='hidden';
+  setTimeout(()=>{
+    document.body.style.overflow='auto';
+    reveal();
+  },1000);
+}
