@@ -36,7 +36,8 @@ body{
     background:var(--white);
 
     line-height:1.6;
-    overflow:hidden;
+    overflow-y:auto;
+    overflow-x:hidden;
 
 }
 
@@ -350,7 +351,7 @@ body{
 
 }
 
-}
+
 
 .hidden{opacity:0;visibility:hidden}
 #intro{position:fixed;inset:0;background:#fff;display:flex;align-items:center;justify-content:center;z-index:5000;transition:all .8s cubic-bezier(.22,.61,.36,1)}
@@ -376,3 +377,6 @@ body{
 .header,.hero{transition:opacity 1.2s ease, transform 1.2s cubic-bezier(.22,.61,.36,1)}
 .hero.hidden{transform:translateY(18px)}
 .header.show,.hero.show{opacity:1;visibility:visible;transform:none}
+.timeline-separator{
+    height:28px;
+}
