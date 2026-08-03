@@ -25,7 +25,7 @@ if (firstVisit) {
 
         reveal();
 
-    }, 1000);
+    }, 650);
 
 } else {
 
