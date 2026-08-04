@@ -1,0 +1,223 @@
+.projects{
+    width:min(1500px,90vw);
+    margin:140px auto 80px;
+}
+
+.project-menu{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:70px;
+
+    margin-bottom:50px;
+
+}
+
+.project-menu button{
+
+    background:none;
+
+    border:none;
+
+    font:inherit;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    cursor:pointer;
+
+    padding-bottom:8px;
+
+}
+
+.project-menu button.active{
+
+    border-bottom:1px solid #111;
+
+}
+
+.project-view{
+
+    position:relative;
+
+    background:#f3f3f3;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:68vh;
+
+}
+
+.project-image{
+
+    max-width:100%;
+
+    max-height:100%;
+
+    width:auto;
+
+    height:auto;
+
+    object-fit:contain;
+
+    display:block;
+
+}
+
+.gallery-arrow{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    background:none;
+
+    color:white;
+
+    font-size:60px;
+
+    cursor:pointer;
+
+    opacity:.5;
+
+    transition:.25s;
+
+}
+
+.gallery-arrow:hover{
+
+    opacity:1;
+
+}
+
+.gallery-arrow.left{
+
+    left:25px;
+
+}
+
+.gallery-arrow.right{
+
+    right:25px;
+
+}
+
+.project-info{
+
+    margin:0 0 40px;
+
+}
+
+.project-info h2{
+
+    font-size:42px;
+
+    font-weight:300;
+
+    margin-bottom:18px;
+
+}
+
+.project-info p{
+
+    max-width:800px;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+.architect{
+
+    margin-top:20px;
+
+}
+
+.architect a{
+
+    text-decoration:none;
+
+}
+
+.project-thumbs{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:nowrap;
+
+}
+
+.project-thumbs img{
+
+    width:90px;
+
+    height:60px;
+
+    object-fit:cover;
+
+    cursor:pointer;
+
+    filter:grayscale(100%);
+
+    opacity:.35;
+
+    transition:.25s;
+
+}
+
+.thumb-empty{
+
+    width:100px;
+
+    height:65px;
+
+    flex:0 0 auto;
+
+}
+
+.project-thumbs img:hover{
+
+    filter:none;
+
+    opacity:1;
+
+}
+
+.project-thumbs img.active{
+
+    filter:none;
+
+    opacity:1;
+
+}
+.gallery-layout{
+
+    display:grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap:60px;
+
+    align-items:start;
+
+    margin-top:50px;
+
+}

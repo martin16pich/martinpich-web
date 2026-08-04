@@ -1,9 +1,156 @@
-<!DOCTYPE html><html lang='cs'><head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>Projekty | Martin Pich</title>
-<link rel='stylesheet' href='css/style.css'></head>
-<body><header><strong>Martin Pich</strong><nav>
-    <a href="omne.html">O mně</a><a href="projekty.html">Projekty</a><a href="jak-pracuji.html">Jak pracuji</a><a href="sluzby.html">Služby</a><a href="kontakt.html">Kontakt</a></nav></header>
-<main class='container'><h2>Projekty</h2><div class='full-image'>Místo pro fotografii 1</div><div class='full-image'>Místo pro fotografii 2</div><div class='full-image'>Místo pro fotografii 3</div><div class='full-image'>Místo pro fotografii 4</div></main>
-<footer>&copy; Martin Pich</footer>
-<script src='js/main.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>
+        Projekty | Martin Pich
+    </title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/projekty.css">
+
+</head>
+
+<body>
+
+<header class="header show">
+
+    <div class="container">
+
+        <a href="index.html"
+           class="logo">
+
+            <img
+                src="images/logo/LOGO_web.jpg"
+                alt="Martin Pich">
+
+        </a>
+
+        <nav class="navigation">
+
+            <a href="omne.html">
+                O mně
+            </a>
+
+            <a href="projekty.html"
+               class="active">
+                Projekty
+            </a>
+
+            <a href="jak-pracuji.html">
+                Jak pracuji
+            </a>
+
+            <a href="sluzby.html">
+                Služby
+            </a>
+
+            <a href="kontakt.html">
+                Kontakt
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="projects">
+
+    <nav class="project-menu">
+
+        <button
+            class="active"
+            data-category="bytove">
+
+            BYTOVÉ DOMY
+
+        </button>
+
+        <button
+            data-category="rodinne">
+
+            RODINNÉ DOMY
+
+        </button>
+
+        <button
+            data-category="verejne">
+
+            VEŘEJNÉ STAVBY
+
+        </button>
+
+    </nav>
+
+
+ <div class="gallery-layout">
+
+    <section class="project-view">
+
+        <button class="gallery-arrow left">
+            &#10094;
+        </button>
+
+        <img
+            id="project-image"
+            class="project-image"
+            src=""
+            alt="">
+
+        <button class="gallery-arrow right">
+            &#10095;
+        </button>
+
+    </section>
+
+
+    <aside class="project-sidebar">
+
+        <section class="project-info">
+
+            <h2 id="project-title"></h2>
+
+            <p id="project-description"></p>
+
+            <p class="architect">
+
+                <strong>Spolupráce:</strong><br>
+
+                <span id="project-collaborators"></span>
+
+            </p>
+
+        </section>
+
+
+        <section
+            id="project-thumbs"
+            class="project-thumbs">
+
+        </section>
+
+    </aside>
+
+</div>
+
+</main>
+
+
+<script src="js/projekty.js"></script>
+
+<script src="js/gallery.js"></script>
+
+</body>
+
+</html>
