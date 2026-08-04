@@ -5,7 +5,7 @@ const projekty = {
         {
             id: "BD01",
 
-            title: "Bytové domy Rychnov nad Kněžnou",
+            title: "Bytové domy <br> Rychnov nad Kněžnou",
 
             image: "images/projekty/BYTOVÉ DOMY/01_BD_Rychnov.jpg",
 
@@ -24,7 +24,7 @@ const projekty = {
         {
             id: "BD02",
 
-            title: "Bytový dům v Táboře",
+            title: "Bytový dům<br>Tábor",
 
             image: "images/projekty/BYTOVÉ DOMY/02_BD_Tabor.jpg",
 
@@ -43,7 +43,7 @@ const projekty = {
         {
             id: "BD03",
 
-            title: "Bytový dům Kbely",
+            title: "Bytový dům<br>Kbely",
 
             image: "images/projekty/BYTOVÉ DOMY/03_BD_Kbely.jpg",
 
@@ -67,7 +67,7 @@ const projekty = {
         {
             id: "BD04",
 
-            title: "Bytové domy Trutnov - Červený kopec",
+            title: "Bytové domy<br>Trutnov - Červený kopec",
 
             image: "images/projekty/BYTOVÉ DOMY/04_BD_Trutnov.jpg",
 
@@ -86,7 +86,7 @@ const projekty = {
         {
             id: "BD05",
 
-            title: "Bytové domy Vysoké Mýto",
+            title: "Bytové domy<br>Vysoké Mýto",
 
             image: "images/projekty/BYTOVÉ DOMY/05_BD_Vysoke_Myto.jpg",
 
@@ -105,7 +105,7 @@ const projekty = {
         {
             id: "BD06",
 
-            title: "Bytový dům Hradec Králové - Plotiště",
+            title: "Bytový dům<br>Hradec Králové - Plotiště",
 
             image: "images/projekty/BYTOVÉ DOMY/06_BD_Hradec_Kralove.jpg",
 

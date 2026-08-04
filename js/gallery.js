@@ -4,7 +4,8 @@ let aktualni = 0;
 const image = document.getElementById("project-image");
 const title = document.getElementById("project-title");
 const description = document.getElementById("project-description");
-const architect = document.getElementById("project-architect");
+const collaborators = document.getElementById("project-collaborators");
+const collaboratorsWrapper = document.getElementById("project-collaborators-wrapper");
 
 const thumbs = document.getElementById("project-thumbs");
 
@@ -23,17 +24,15 @@ function zobrazProjekt(index){
     image.src = projekt.image;
     image.alt = projekt.title;
 
-    title.textContent = projekt.title;
+    title.innerHTML = projekt.title;
 
     description.textContent = projekt.description;
 
-    const wrapper = document.querySelector(".architect");
-
-architect.innerHTML = "";
+collaborators.innerHTML = "";
 
 if (projekt.collaborators && projekt.collaborators.length > 0) {
 
-    wrapper.style.display = "block";
+    collaboratorsWrapper.style.display = "block";
 
     projekt.collaborators.forEach((person, index) => {
 
@@ -43,17 +42,19 @@ if (projekt.collaborators && projekt.collaborators.length > 0) {
         a.target = "_blank";
         a.textContent = person.name;
 
-        architect.appendChild(a);
+        collaborators.appendChild(a);
 
         if (index < projekt.collaborators.length - 1) {
-            architect.appendChild(document.createTextNode(", "));
+
+            collaborators.appendChild(document.createElement("br"));
+
         }
 
     });
 
 } else {
 
-    wrapper.style.display = "none";
+    collaboratorsWrapper.style.display = "none";
 
 }
 
@@ -146,4 +147,8 @@ menu.forEach(button=>{
 });
 
 
-zobrazProjekt(0);
+aktualni = Math.floor(
+    Math.random() * projekty[kategorie].length
+);
+
+zobrazProjekt(aktualni);
