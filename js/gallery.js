@@ -1,5 +1,10 @@
-let kategorie = "bytove";
-let aktualni = 0;
+const kategorieList = ["bytove", "rodinne", "verejne"];
+
+let kategorie =
+    kategorieList[Math.floor(Math.random() * kategorieList.length)];
+
+let aktualni =
+    Math.floor(Math.random() * projekty[kategorie].length);
 
 const image = document.getElementById("project-image");
 const title = document.getElementById("project-title");
@@ -138,17 +143,45 @@ menu.forEach(button=>{
 
         kategorie = button.dataset.category;
 
-        aktualni = 0;
+        let novy;
 
-        zobrazProjekt(0);
+        do{
+
+            novy = Math.floor(
+                Math.random() * projekty[kategorie].length
+            );
+
+        }while(
+            projekty[kategorie].length > 1 &&
+            novy === aktualni
+        );
+
+        aktualni = novy;
+
+        zobrazProjekt(aktualni);
 
     });
 
 });
 
-
-aktualni = Math.floor(
+const prvni = Math.floor(
     Math.random() * projekty[kategorie].length
 );
+
+aktualni = prvni;
+
+menu.forEach(button => {
+
+    if(button.dataset.category === kategorie){
+
+        button.classList.add("active");
+
+    }else{
+
+        button.classList.remove("active");
+
+    }
+
+});
 
 zobrazProjekt(aktualni);
