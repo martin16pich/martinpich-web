@@ -2,23 +2,31 @@ const work = {
 
     studie:{
 
-        title:"Studie",
+        title:"Studie stavby",
 
-        image:"images/work/studie.jpg",
+        image:"images/jak-pracuji/studie.jpg",
 
         text:`
-Na práci architekta navazuji ve chvíli,
-kdy je zpracována studie stavby.
-
-Architektonický návrh převádím
-do projektové dokumentace.
+Studii stavby zpracovávají architekti, se kterými úzce spolupracuji.<br>
+Studie stavby je nezbytným podkladem pro další pokračování projektu.<br>
+Studii já nezpracovávám, ale dokáži doporučit výborné architekty.
+ 
 `,
 
         extra:`
+<b>Proč je potřeba studie stavby od architekta?</b>
 
-<b>Výstup:</b><br>
+<ul>
 
-Projekt pro další stupeň dokumentace.
+<li>architekt je specialista na návrh domu</li>
+
+<li>najde se vhodné umístění stavby na pozemku</li>
+
+<li>vyřešení dispozic místností dle potřeb klienta</li>
+
+<li>důležitý podklad pro další proječní činnost</li>
+
+</ul>
 
 `
 
@@ -27,18 +35,45 @@ Projekt pro další stupeň dokumentace.
 
     povoleni:{
 
-        title:"Projekt pro povolení stavby",
+        title:"Projektová dokumentace pro povolení stavby",
 
-        image:"images/work/povoleni.jpg",
+        image:"images/jak-pracuji/povoleni.jpg",
 
         text:`
-Projektová dokumentace určená
-pro povolení stavby.
+Projekt pro stavební povolení je dokumentace, která slouží zejména<br> pro vydání stavebního povolení.<br>
+Je to zjednodušený projekt, který neslouží pro realizaci stavby.<br>
+Odevzdává se převážně elektronicky.<br>
+
+
 `,
 
         extra:`
-Projekt slouží jako podklad
-pro stavební řízení.
+<b>Co obsahuje projekt pro stavební povolení?</b>
+
+<ul>
+
+<li>technické zprávy</li>
+
+<li>situační výkresy</li>
+
+<li>půdorysy, řezy a pohledy objektu</li>
+
+<li>statiku, požární řešení - zpracovávají specializovaní kolegové</li>
+
+</ul>
+
+<b>Co doporučuji?</b>
+
+<ul>
+
+<li>vyhnout se minimalistickému projektu bez koordinace s technickým zařízením budov (TZB), který je dostatečný podle dnešních zákonů</li>
+
+<li>už v této fázi projektu základně vyřešit koordinaci stavby s TZB, tedy vytápěním, vzduchotechnikou, elektroinstalacemi, vodou a kanalizací</li>
+
+<li>TZB nechat zpracovat specialisty na danou profesi</li>
+
+
+</ul>
 `
 
     },
@@ -46,72 +81,50 @@ pro stavební řízení.
 
     provadeni:{
 
-        title:"Projekt pro provádění stavby",
+        title:"Projektová dokumentace pro provádění stavby",
 
-        image:"images/work/provadeni.jpg",
+        image:"images/jak-pracuji/provadeni.jpg",
 
         text:`
-Dokumentace určená
-pro samotnou realizaci stavby.
+Projekt určený pro zpracování rozpočtu stavby a pro samotnou realizaci stavby.<br>
+Detailní projekt, který jde do detailů a obsahuje veškeré informace pro stavbu.<br>
+Odevzdává se tištěně i elektronicky.<br>
+
 `,
 
         extra:`
-Obsahuje konstrukční řešení,
-detaily a koordinaci profesí.
+<b>Co obsahuje projekt pro provádění stavby?</b>
+
+<ul>
+
+<li>technické zprávy</li>
+
+<li>situační výkresy</li>
+
+<li>podrobné půdorysy, řezy a pohledy objektu s barevně rozlišenými konstrukcemi a popisem jednotlivých prvků</li>
+
+<li>výpisy dílčích prvků jako jsou okna, dveře, překlady, zámečnické výrobky (např. zábradlí), truhlářské výrobky (např. vnitřní parapety, schodiště), 
+výpis klempířských výrobků (např. vnější parapety, oplechování), výpis žaluzií</li>
+
+<li>detaily = rozkreslení napojení konstrukcí</li>
+
+<li>statiku, požární řešení, podrobné TZB - zpracovávají specializovaní kolegové</li>
+
+</ul>
 `
 
     },
 
 
-    pasport:{
+     bim:{
 
-        title:"Pasport stavby",
+        title:"3D model",
 
-        image:"images/work/pasport.jpg",
-
-        text:`
-Zpracování pasportů
-stávajících staveb.
-`,
-
-        extra:`
-Podklad pro evidenci,
-rekonstrukce i legalizaci.
-`
-
-    },
-
-
-    demolice:{
-
-        title:"Projekt odstranění stavby",
-
-        image:"images/work/demolice.jpg",
+        image:"images/jak-pracuji/3Dmodel.jpg",
 
         text:`
-Projektová dokumentace
-pro odstranění staveb.
-`,
+Veškeré projekty zpracovávám ve 3D prostředí Archicad.
 
-        extra:`
-Součást stavebního řízení.
-`
-
-    },
-
-
-    bim:{
-
-        title:"3D model (BIM)",
-
-        image:"images/work/bim.jpg",
-
-        text:`
-Veškerou projektovou dokumentaci
-zpracovávám ve 3D prostředí Archicad.
-
-Součástí projektu je také
-interaktivní model BIMx.
 `,
 
         extra:`
@@ -120,11 +133,11 @@ interaktivní model BIMx.
 
 <ul>
 
-<li>prohlížení stavby v mobilu</li>
+<li>efektivní koordinace projektu</li>
 
-<li>lepší orientace klienta</li>
+<li>možnost poskytnout klientovi program BIMx, ve kterém si sám může procházet objektem v mobilu</li>
 
-<li>snadnější koordinace projektu</li>
+<li>možnost zasílat klientovi, kromě čárových výkresů, i 3D model pro lepší představu o stavbě</li>
 
 </ul>
 
