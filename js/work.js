@@ -40,7 +40,7 @@ Studii já nezpracovávám, ale dokáži doporučit výborné architekty.
         image:"images/jak-pracuji/povoleni.jpg",
 
         text:`
-Projekt pro stavební povolení je dokumentace, která slouží zejména<br> pro vydání stavebního povolení.<br>
+Projekt pro stavební povolení je dokumentace, která slouží zejména pro vydání stavebního povolení.<br>
 Je to zjednodušený projekt, který neslouží pro realizaci stavby.<br>
 Odevzdává se převážně elektronicky.<br>
 
@@ -87,6 +87,7 @@ Odevzdává se převážně elektronicky.<br>
 
         text:`
 Projekt určený pro zpracování rozpočtu stavby a pro samotnou realizaci stavby.<br>
+Vyřeší se poslední úpravy projektu pro maximální spokojenost klienta.<br>
 Detailní projekt, který jde do detailů a obsahuje veškeré informace pro stavbu.<br>
 Odevzdává se tištěně i elektronicky.<br>
 

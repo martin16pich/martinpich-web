@@ -1,4 +1,4 @@
-let stranka = "studie";
+let stranka = "povoleni";
 
 const image = document.getElementById("work-image");
 
@@ -38,4 +38,4 @@ menu.forEach(button=>{
 
 });
 
-zobraz("studie");
+zobraz("povoleni");
