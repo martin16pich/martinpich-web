@@ -2,49 +2,11 @@ const intro = document.getElementById("intro");
 const header = document.querySelector(".header");
 const hero = document.querySelector(".hero");
 
-if (intro && header && hero) {
+function reveal() {
 
-    function reveal() {
+    intro.classList.add("animate");
 
-        intro.classList.add("animate");
-
-        setTimeout(() => {
-
-            header.classList.remove("hidden");
-            hero.classList.remove("hidden");
-
-            header.classList.add("show");
-            hero.classList.add("show");
-
-        }, 1700);
-
-        setTimeout(() => {
-
-            intro.classList.add("fade");
-
-        }, 2200);
-
-        setTimeout(() => {
-
-            intro.remove();
-
-        }, 3000);
-
-        sessionStorage.setItem("introPlayed", "1");
-
-    }
-
-    const firstVisit = !sessionStorage.getItem("introPlayed");
-
-    if (firstVisit) {
-
-        document.body.style.overflow = "hidden";
-
-        setTimeout(reveal, 650);
-
-    } else {
-
-        intro.remove();
+    setTimeout(() => {
 
         header.classList.remove("hidden");
         hero.classList.remove("hidden");
@@ -52,8 +14,26 @@ if (intro && header && hero) {
         header.classList.add("show");
         hero.classList.add("show");
 
-        document.body.style.overflow = "auto";
+    }, 1700);
 
-    }
+    setTimeout(() => {
+
+        intro.classList.add("fade");
+
+    }, 2200);
+
+    setTimeout(() => {
+
+        intro.remove();
+
+    }, 3000);
+
+}
+
+if (intro && header && hero) {
+
+    document.body.style.overflow = "hidden";
+
+    setTimeout(reveal,650);
 
 }
