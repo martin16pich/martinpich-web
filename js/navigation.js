@@ -10,3 +10,15 @@ if (menuButton && navigation) {
     });
 
 }
+
+const logo = document.getElementById("logo-link");
+
+if (logo) {
+
+    logo.addEventListener("click", () => {
+
+        sessionStorage.setItem("introPlayed", "1");
+
+    });
+
+}
