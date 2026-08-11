@@ -344,7 +344,7 @@ body{
 
 .logo img{
 
-    height:46px;
+    height:40px;
 
 }
 
@@ -428,7 +428,7 @@ body{
 
     height:auto;
 
-    padding:120px 0 40px;
+    padding:95px 0 30px;
 
     gap:35px;
 
@@ -442,9 +442,9 @@ body{
 
 .hero-image img{
 
-    width:72%;
+    width:62%;
 
-    max-width:330px;
+    max-width:260px;
 
 }
 
@@ -456,7 +456,7 @@ body{
 
 .hero h1{
 
-    font-size:44px;
+    font-size:32px;
 
     line-height:1;
 
@@ -466,13 +466,13 @@ body{
 
 .hero h1 .big{
 
-    font-size:62px;
+    font-size:46px;
 
 }
 
 .hero h1 span:last-child{
 
-    font-size:44px;
+    font-size:32px;
 
 }
 
