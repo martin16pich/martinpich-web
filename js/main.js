@@ -1,80 +1,69 @@
-const intro=document.getElementById('intro');
-const header=document.querySelector('.header');
-const hero=document.querySelector('.hero');
+const intro = document.getElementById("intro");
+const header = document.querySelector(".header");
+const hero = document.querySelector(".hero");
 
-function reveal(){
-  intro.classList.add('animate');
-  setTimeout(()=>{
-    header.classList.remove('hidden');
-    hero.classList.remove('hidden');
-    header.classList.add('show');
-    hero.classList.add('show');
-  },1700);
-  setTimeout(()=>intro.classList.add('fade'),2200);
-  setTimeout(()=>intro.remove(),3000);
-  sessionStorage.setItem('introPlayed','1');
-}
+function reveal() {
 
-if(intro && hero){
+    intro.classList.add("animate");
 
-    const firstVisit = !sessionStorage.getItem('introPlayed');
+    setTimeout(() => {
 
-    if(firstVisit){
+        header.classList.remove("hidden");
+        hero.classList.remove("hidden");
 
-        document.body.style.overflow='hidden';
+        header.classList.add("show");
+        hero.classList.add("show");
 
-        setTimeout(()=>{
+    }, 1700);
 
-            reveal();
+    setTimeout(() => {
 
-        },650);
+        intro.classList.add("fade");
 
-    }else{
+    }, 2200);
+
+    setTimeout(() => {
 
         intro.remove();
 
-        header.classList.remove('hidden');
-        hero.classList.remove('hidden');
+    }, 3000);
 
-        header.style.transition="none";
-        hero.style.transition="none";
-
-        header.classList.add('show');
-        hero.classList.add('show');
-
-        requestAnimationFrame(()=>{
-
-            header.style.transition="";
-            hero.style.transition="";
-
-        });
-
-        document.body.style.overflow='auto';
-
-    }
-
-}else{
-
-    if(header){
-
-        header.classList.remove('hidden');
-        header.classList.add('show');
-
-    }
+    sessionStorage.setItem("introPlayed", "1");
 
 }
 
-}
-const menuButton = document.querySelector(".menu-toggle");
+const firstVisit = !sessionStorage.getItem("introPlayed");
 
-const navigation = document.querySelector(".navigation");
+if (firstVisit) {
 
-if(menuButton){
+    document.body.style.overflow = "hidden";
 
-    menuButton.addEventListener("click",()=>{
+    setTimeout(() => {
 
-        navigation.classList.toggle("show");
+        reveal();
+
+    }, 650);
+
+} else {
+
+    intro.remove();
+
+    header.classList.remove("hidden");
+    hero.classList.remove("hidden");
+
+    header.style.transition = "none";
+    hero.style.transition = "none";
+
+    header.classList.add("show");
+    hero.classList.add("show");
+
+    requestAnimationFrame(() => {
+
+        header.style.transition = "";
+        hero.style.transition = "";
 
     });
+
+    document.body.style.overflow = "auto";
 
 }
