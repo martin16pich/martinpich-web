@@ -15,37 +15,54 @@ function reveal(){
   sessionStorage.setItem('introPlayed','1');
 }
 
-const firstVisit = !sessionStorage.getItem('introPlayed');
+if(intro && hero){
 
-if (firstVisit) {
+    const firstVisit = !sessionStorage.getItem('introPlayed');
 
-    document.body.style.overflow = 'hidden';
+    if(firstVisit){
 
-    setTimeout(() => {
+        document.body.style.overflow='hidden';
 
-        reveal();
+        setTimeout(()=>{
 
-    }, 650);
+            reveal();
 
-} else {
+        },650);
 
-    intro.remove();
+    }else{
 
-    header.classList.remove('hidden');
-    hero.classList.remove('hidden');
+        intro.remove();
 
-    header.style.transition = "none";
-    hero.style.transition = "none";
+        header.classList.remove('hidden');
+        hero.classList.remove('hidden');
 
-    header.classList.add('show');
-    hero.classList.add('show');
+        header.style.transition="none";
+        hero.style.transition="none";
 
-    requestAnimationFrame(() => {
-        header.style.transition = "";
-        hero.style.transition = "";
-    });
+        header.classList.add('show');
+        hero.classList.add('show');
 
-    document.body.style.overflow = 'hidden';
+        requestAnimationFrame(()=>{
+
+            header.style.transition="";
+            hero.style.transition="";
+
+        });
+
+        document.body.style.overflow='auto';
+
+    }
+
+}else{
+
+    if(header){
+
+        header.classList.remove('hidden');
+        header.classList.add('show');
+
+    }
+
+}
 
 }
 const menuButton = document.querySelector(".menu-toggle");
