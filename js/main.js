@@ -48,3 +48,16 @@ if (firstVisit) {
     document.body.style.overflow = 'hidden';
 
 }
+const menuButton = document.querySelector(".menu-toggle");
+
+const navigation = document.querySelector(".navigation");
+
+if(menuButton){
+
+    menuButton.addEventListener("click",()=>{
+
+        navigation.classList.toggle("show");
+
+    });
+
+}
