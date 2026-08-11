@@ -24,19 +24,21 @@ function reveal() {
 
     setTimeout(() => {
 
-    intro.remove();
+        intro.remove();
 
-    document.body.style.overflow = "auto";
+        document.body.style.overflow = "auto";
 
-}, 3000);
-
-sessionStorage.setItem("introPlayed", "1");
+    }, 3000);
 
 }
 
 if (intro && header && hero) {
 
-    document.body.style.overflow = "hidden";
+    if (window.innerWidth > 900) {
+
+        document.body.style.overflow = "hidden";
+
+    }
 
     setTimeout(reveal,650);
 
