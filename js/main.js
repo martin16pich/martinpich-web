@@ -24,9 +24,13 @@ function reveal() {
 
     setTimeout(() => {
 
-        intro.remove();
+    intro.remove();
 
-    }, 3000);
+    document.body.style.overflow = "auto";
+
+}, 3000);
+
+sessionStorage.setItem("introPlayed", "1");
 
 }
 
