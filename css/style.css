@@ -356,7 +356,7 @@ body{
 
     border:none;
 
-    font-size:34px;
+    font-size: 42px;
 
     cursor:pointer;
 
@@ -370,13 +370,17 @@ body{
 
     display:none;
 
-    position:absolute;
+   position:fixed;
 
     top:80px;
 
     left:0;
 
     width:100%;
+    
+    right:0;
+    
+    z-index:999;
 
     background:#fff;
 
