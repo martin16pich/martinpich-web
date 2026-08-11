@@ -1,23 +1,25 @@
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".navigation");
 
-if (menuButton && navigation) {
+if(menuButton && navigation){
 
-    menuButton.addEventListener("click", () => {
+    menuButton.addEventListener("click",()=>{
 
         navigation.classList.toggle("show");
+
+        menuButton.classList.toggle("open");
 
     });
 
 }
 
-const logo = document.getElementById("logo-link");
+const logo=document.getElementById("logo-link");
 
-if (logo) {
+if(logo){
 
-    logo.addEventListener("click", () => {
+    logo.addEventListener("click",()=>{
 
-        sessionStorage.setItem("introPlayed", "1");
+        sessionStorage.setItem("introPlayed","1");
 
     });
 
