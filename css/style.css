@@ -282,13 +282,17 @@ body{
 
 .hero-image img{
 
-     width:min(100%,720px);
+    width:auto;
 
-    height:auto;
+    height:min(78vh,820px);
 
-     display:block;
+    max-width:100%;
 
-    }
+    object-fit:contain;
+
+    display:block;
+
+}
 
 /* ---------------------------- */
 
