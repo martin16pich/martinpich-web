@@ -123,3 +123,156 @@
     line-height:1.7;
 
 }
+/* ==========================================
+   MOBIL - JAK PRACUJI
+========================================== */
+
+@media (max-width:900px){
+
+    .work{
+
+        width:92%;
+
+        margin:105px auto 40px;
+
+    }
+
+
+    /* ---------- PODMENU ---------- */
+
+    .work-menu{
+
+        display:grid;
+
+        grid-template-columns:repeat(4,1fr);
+
+        align-items:start;
+
+        gap:8px;
+
+        width:100%;
+
+        margin-bottom:30px;
+
+    }
+
+    .work-menu button{
+
+        width:100%;
+
+        max-width:90px;
+
+        justify-self:center;
+
+        color:#111;
+
+        font-size:12px;
+
+        line-height:1.25;
+
+        letter-spacing:.7px;
+
+        white-space:normal;
+
+        text-align:center;
+
+        padding:0 2px 7px;
+
+    }
+
+
+    /* ---------- OBSAH ---------- */
+
+    .work-layout{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:0;
+
+        width:100%;
+
+    }
+
+
+    /* ---------- OBRÁZEK ---------- */
+
+    .work-image{
+
+        width:100%;
+
+    }
+
+    .work-image img{
+
+        width:100%;
+
+        height:auto;
+
+        max-height:none;
+
+        aspect-ratio:16 / 10;
+
+        object-fit:cover;
+
+        object-position:center;
+
+        display:block;
+
+        border-radius:4px;
+
+    }
+
+
+    /* ---------- TEXT ---------- */
+
+    .work-info{
+
+        width:100%;
+
+        margin-top:25px;
+
+    }
+
+    .work-info h2{
+
+        font-size:30px;
+
+        line-height:1.15;
+
+        margin-bottom:18px;
+
+    }
+
+    .work-info p{
+
+        font-size:16px;
+
+        line-height:1.55;
+
+        margin-bottom:14px;
+
+    }
+
+    .work-info ul{
+
+        font-size:16px;
+
+        line-height:1.55;
+
+        margin-bottom:20px;
+
+        padding-left:20px;
+
+    }
+
+    #work-extra{
+
+        font-size:16px;
+
+        line-height:1.55;
+
+    }
+
+}
