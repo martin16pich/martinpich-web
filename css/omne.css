@@ -182,3 +182,125 @@
     align-items:start;
 
 }
+
+/* ==========================================
+   MOBIL
+========================================== */
+
+@media (max-width:900px){
+
+.about{
+
+    width:92%;
+
+    margin:90px auto 40px;
+
+}
+
+.about-layout{
+
+    grid-template-columns:1fr;
+
+    gap:60px;
+
+}
+
+.intro{
+
+    font-size:32px;
+
+    margin:30px auto 50px;
+
+    max-width:100%;
+
+}
+
+.stats{
+
+    gap:40px 20px;
+
+}
+
+.stats .n{
+
+    font-size:52px;
+
+}
+
+.stats .l{
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+}
+
+/* ---------- TIMELINE ---------- */
+
+.timeline{
+
+    margin-top:10px;
+
+}
+
+.timeline::after{
+
+    left:15px;
+
+}
+
+.timeline::before{
+
+    left:20px;
+
+}
+
+.event{
+
+    grid-template-columns:90px 1fr;
+
+    padding:16px 0;
+
+}
+
+.year{
+
+    font-size:22px;
+
+    padding:0 4px;
+
+}
+
+.content{
+
+    margin-left:0;
+
+}
+
+.content h3{
+
+    font-size:22px;
+
+    line-height:1.25;
+
+    white-space:normal;
+
+}
+
+.content p{
+
+    font-size:15px;
+
+    line-height:1.5;
+
+    white-space:normal;
+
+}
+
+.timeline-gap{
+
+    height:18px;
+
+}
+
+}
