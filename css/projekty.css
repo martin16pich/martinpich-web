@@ -281,6 +281,15 @@
 
 @media (max-width:900px){
 
+    .project-menu button{
+
+        max-width:90px;
+
+        justify-self:center;
+
+    }
+
+
     .projects{
 
         width:92%;
@@ -495,10 +504,11 @@
         object-fit:cover;
 
     }
-
-}
-.project-thumbs{
+    
+    .project-thumbs{
 
     display:none;
+    }
+
 
 }
