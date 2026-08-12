@@ -26,7 +26,12 @@ function zobrazProjekt(index){
 
     aktualni = index;
 
-    image.src = projekt.image;
+    image.src = projekt.image
+    .replace("images/projekty/", "images/projekty/hero/")
+    .replace(".jpg", ".webp")
+    .replace(".jpeg", ".webp")
+    .replace(".JPEG", ".webp")
+    .replace(".png", ".webp");
     image.alt = projekt.title;
 
     title.innerHTML = projekt.title;
@@ -85,7 +90,12 @@ function vytvorMiniatury() {
 
         const img = document.createElement("img");
 
-        img.src = projekt.image;
+        img.src = projekt.image
+    .replace("images/projekty/", "images/projekty/thumb/")
+    .replace(".jpg", ".webp")
+    .replace(".jpeg", ".webp")
+    .replace(".JPEG", ".webp")
+    .replace(".png", ".webp");
         img.alt = projekt.title;
 
         if (index === aktualni) {
