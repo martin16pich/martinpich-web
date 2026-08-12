@@ -476,7 +476,7 @@ body{
 
     height:auto;
 
-    padding:95px 0 30px;
+    padding:70px 0 30px;
 
     gap:35px;
 
@@ -490,9 +490,9 @@ body{
 
 .hero-image img{
 
-    width:62%;
+    width:68%;
 
-    max-width:260px;
+    max-width:300px;
 
 }
 
