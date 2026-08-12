@@ -6,11 +6,13 @@ let kategorie =
 let aktualni =
     Math.floor(Math.random() * projekty[kategorie].length);
 
+
 const image = document.getElementById("project-image");
 const title = document.getElementById("project-title");
 const description = document.getElementById("project-description");
 const collaborators = document.getElementById("project-collaborators");
-const collaboratorsWrapper = document.getElementById("project-collaborators-wrapper");
+const collaboratorsWrapper =
+    document.getElementById("project-collaborators-wrapper");
 
 const thumbs = document.getElementById("project-thumbs");
 
@@ -20,58 +22,158 @@ const right = document.querySelector(".gallery-arrow.right");
 const menu = document.querySelectorAll(".project-menu button");
 
 
-function zobrazProjekt(index){
+/* ==========================================
+   CESTA K VELKÉMU OBRÁZKU
+========================================== */
+
+function getHeroImage(path) {
+
+    return path
+        .replace("images/projekty/", "images/projekty/hero/")
+        .replace(".jpg", ".webp")
+        .replace(".jpeg", ".webp")
+        .replace(".JPEG", ".webp")
+        .replace(".png", ".webp");
+
+}
+
+
+/* ==========================================
+   CESTA K MINIATUŘE
+========================================== */
+
+function getThumbImage(path) {
+
+    return path
+        .replace("images/projekty/", "images/projekty/thumb/")
+        .replace(".jpg", ".webp")
+        .replace(".jpeg", ".webp")
+        .replace(".JPEG", ".webp")
+        .replace(".png", ".webp");
+
+}
+
+
+/* ==========================================
+   PŘEDNAČTENÍ OBRÁZKU
+========================================== */
+
+function preloadImage(src) {
+
+    const preload = new Image();
+
+    preload.src = src;
+
+}
+
+
+/* ==========================================
+   PŘEDNAČTENÍ SOUSEDNÍCH PROJEKTŮ
+========================================== */
+
+function preloadSousedu() {
+
+    const seznam = projekty[kategorie];
+
+    const nextIndex =
+        (aktualni + 1) % seznam.length;
+
+    const prevIndex =
+        (aktualni - 1 + seznam.length) % seznam.length;
+
+    preloadImage(
+        getHeroImage(seznam[nextIndex].image)
+    );
+
+    preloadImage(
+        getHeroImage(seznam[prevIndex].image)
+    );
+
+}
+
+
+/* ==========================================
+   ZOBRAZENÍ PROJEKTU
+========================================== */
+
+function zobrazProjekt(index) {
 
     const projekt = projekty[kategorie][index];
 
     aktualni = index;
 
-    image.src = projekt.image
-    .replace("images/projekty/", "images/projekty/hero/")
-    .replace(".jpg", ".webp")
-    .replace(".jpeg", ".webp")
-    .replace(".JPEG", ".webp")
-    .replace(".png", ".webp");
+
+    /* HLAVNÍ OBRÁZEK */
+
+    image.src = getHeroImage(projekt.image);
+
     image.alt = projekt.title;
+
+
+    /* TEXT */
 
     title.innerHTML = projekt.title;
 
     description.textContent = projekt.description;
 
-collaborators.innerHTML = "";
 
-if (projekt.collaborators && projekt.collaborators.length > 0) {
+    /* SPOLUPRÁCE */
 
-    collaboratorsWrapper.style.display = "block";
+    collaborators.innerHTML = "";
 
-    projekt.collaborators.forEach((person, index) => {
+    if (
+        projekt.collaborators &&
+        projekt.collaborators.length > 0
+    ) {
 
-        const a = document.createElement("a");
+        collaboratorsWrapper.style.display = "block";
 
-        a.href = person.url;
-        a.target = "_blank";
-        a.textContent = person.name;
+        projekt.collaborators.forEach((person, index) => {
 
-        collaborators.appendChild(a);
+            const a = document.createElement("a");
 
-        if (index < projekt.collaborators.length - 1) {
+            a.href = person.url;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.textContent = person.name;
 
-            collaborators.appendChild(document.createElement("br"));
+            collaborators.appendChild(a);
 
-        }
+            if (
+                index <
+                projekt.collaborators.length - 1
+            ) {
 
-    });
+                collaborators.appendChild(
+                    document.createElement("br")
+                );
 
-} else {
+            }
 
-    collaboratorsWrapper.style.display = "none";
+        });
 
-}
+    } else {
+
+        collaboratorsWrapper.style.display = "none";
+
+    }
+
+
+    /* MINIATURY */
 
     vytvorMiniatury();
 
+
+    /* PŘEDNAČTENÍ PŘEDCHOZÍHO A DALŠÍHO */
+
+    preloadSousedu();
+
 }
 
+
+/* ==========================================
+   MINIATURY
+========================================== */
 
 function vytvorMiniatury() {
 
@@ -84,27 +186,37 @@ function vytvorMiniatury() {
     for (let slot = 0; slot < visible; slot++) {
 
         const index =
-    (aktualni - 2 + slot + seznam.length) % seznam.length;
+            (
+                aktualni -
+                2 +
+                slot +
+                seznam.length
+            ) % seznam.length;
 
         const projekt = seznam[index];
 
-        const img = document.createElement("img");
+        const img =
+            document.createElement("img");
 
-        img.src = projekt.image
-    .replace("images/projekty/", "images/projekty/thumb/")
-    .replace(".jpg", ".webp")
-    .replace(".jpeg", ".webp")
-    .replace(".JPEG", ".webp")
-    .replace(".png", ".webp");
+        img.src =
+            getThumbImage(projekt.image);
+
         img.alt = projekt.title;
 
+
         if (index === aktualni) {
+
             img.classList.add("active");
+
         }
 
+
         img.addEventListener("click", () => {
+
             zobrazProjekt(index);
+
         });
+
 
         thumbs.appendChild(img);
 
@@ -113,11 +225,18 @@ function vytvorMiniatury() {
 }
 
 
-right.addEventListener("click",()=>{
+/* ==========================================
+   ŠIPKA DOPRAVA
+========================================== */
+
+right.addEventListener("click", () => {
 
     aktualni++;
 
-    if(aktualni >= projekty[kategorie].length){
+    if (
+        aktualni >=
+        projekty[kategorie].length
+    ) {
 
         aktualni = 0;
 
@@ -128,13 +247,18 @@ right.addEventListener("click",()=>{
 });
 
 
-left.addEventListener("click",()=>{
+/* ==========================================
+   ŠIPKA DOLEVA
+========================================== */
+
+left.addEventListener("click", () => {
 
     aktualni--;
 
-    if(aktualni < 0){
+    if (aktualni < 0) {
 
-        aktualni = projekty[kategorie].length - 1;
+        aktualni =
+            projekty[kategorie].length - 1;
 
     }
 
@@ -143,28 +267,38 @@ left.addEventListener("click",()=>{
 });
 
 
-menu.forEach(button=>{
+/* ==========================================
+   ZMĚNA KATEGORIE
+========================================== */
 
-    button.addEventListener("click",()=>{
+menu.forEach(button => {
 
-        menu.forEach(b=>b.classList.remove("active"));
+    button.addEventListener("click", () => {
+
+        menu.forEach(b =>
+            b.classList.remove("active")
+        );
 
         button.classList.add("active");
 
-        kategorie = button.dataset.category;
+        kategorie =
+            button.dataset.category;
+
 
         let novy;
 
-        do{
+        do {
 
             novy = Math.floor(
-                Math.random() * projekty[kategorie].length
+                Math.random() *
+                projekty[kategorie].length
             );
 
-        }while(
+        } while (
             projekty[kategorie].length > 1 &&
             novy === aktualni
         );
+
 
         aktualni = novy;
 
@@ -174,24 +308,43 @@ menu.forEach(button=>{
 
 });
 
+
+/* ==========================================
+   PRVNÍ PROJEKT
+========================================== */
+
 const prvni = Math.floor(
-    Math.random() * projekty[kategorie].length
+    Math.random() *
+    projekty[kategorie].length
 );
 
 aktualni = prvni;
 
+
+/* ==========================================
+   AKTIVNÍ KATEGORIE
+========================================== */
+
 menu.forEach(button => {
 
-    if(button.dataset.category === kategorie){
+    if (
+        button.dataset.category ===
+        kategorie
+    ) {
 
         button.classList.add("active");
 
-    }else{
+    } else {
 
         button.classList.remove("active");
 
     }
 
 });
+
+
+/* ==========================================
+   START
+========================================== */
 
 zobrazProjekt(aktualni);
