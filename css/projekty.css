@@ -292,23 +292,23 @@
 
     /* ---------- KATEGORIE ---------- */
 
-    .project-menu{
+  .project-menu{
 
-        display:flex;
+    display:grid;
 
-        justify-content:flex-start;
+    grid-template-columns:repeat(3, 1fr);
 
-        gap:28px;
+    gap:12px;
 
-        margin-bottom:30px;
+    width:100%;
 
-        overflow-x:auto;
+    margin-bottom:30px;
 
-        white-space:nowrap;
+    overflow:visible;
 
-        scrollbar-width:none;
+    white-space:normal;
 
-    }
+}
 
     .project-menu::-webkit-scrollbar{
 
@@ -318,16 +318,25 @@
 
     .project-menu button{
 
-        flex:0 0 auto;
+    width:100%;
 
-        font-size:13px;
+    flex:none;
 
-        letter-spacing:1px;
+    font-size:13px;
 
-        padding-bottom:6px;
+    line-height:1.3;
+
+    letter-spacing:1px;
+
+    color:#111;
+
+    padding:0 2px 7px;
+
+    white-space:normal;
+
+    text-align:center;
 
     }
-
 
     /* ---------- ROZLOŽENÍ ---------- */
 
@@ -402,17 +411,13 @@
 
     /* ---------- INFORMACE ---------- */
 
-    .project-sidebar{
+   .project-sidebar{
 
-        display:flex;
+    display:block;
 
-        flex-direction:column;
+    height:auto;
 
-        height:auto;
-
-        width:100%;
-
-    }
+}
 
     .project-info{
 
@@ -490,5 +495,10 @@
         object-fit:cover;
 
     }
+
+}
+.project-thumbs{
+
+    display:none;
 
 }
