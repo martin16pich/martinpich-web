@@ -284,7 +284,7 @@ body{
 
     width:auto;
 
-    height:min(78vh,820px);
+    height:clamp(500px,78vh,820px);
 
     max-width:100%;
 
