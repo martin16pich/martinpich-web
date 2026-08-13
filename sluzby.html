@@ -41,162 +41,282 @@
 <main class="services-page">
 
     <header class="services-intro">
-        <p class="services-intro__subtitle">Orientační ceny projektové dokumentace</p>
-        <p class="services-intro__text">
-            Uvedené ceny jsou orientační pro projekt rodinného domu. Přesný rozsah a cenu stanovím podle velikosti
-            stavby, složitosti řešení, vstupních podkladů a požadavků klienta. Ceny nezahrnují správní poplatky, geodetické podklady, průzkumy.
+
+        <p class="services-intro__subtitle">
+            Orientační ceny projektové dokumentace
         </p>
+
+        <p class="services-intro__text">
+            Uvedené ceny jsou orientační pro projekt rodinného domu.
+            Přesný rozsah a cenu stanovím podle velikosti stavby,
+            složitosti řešení, vstupních podkladů a požadavků klienta.
+            Ceny nezahrnují správní poplatky, geodetické podklady, průzkumy.
+        </p>
+
     </header>
 
+
+    <!-- PROJEKT PRO POVOLENÍ STAVBY -->
+
     <section class="services-section" aria-labelledby="permit-heading">
+
         <h2 class="services-section__title" id="permit-heading">
             Projekt pro povolení stavby
         </h2>
+
         <p class="services-section__description">
-    projekt nutný k povolení stavby stavebním úřadem
-</p>
+            projekt nutný k povolení stavby stavebním úřadem
+        </p>
 
         <div class="services-grid">
 
-            <article class="service-card">
-                <h3 class="service-card__title">Základní rozsah</h3>
-                <p class="service-card__price"><span>od</span> 90 000 Kč</p>
-                <button class="service-card__button" type="button"
-                        data-service-detail="permit-basic"
-                        aria-haspopup="dialog" aria-expanded="false">
-                    Podrobnosti
-                </button>
+            <article
+                class="service-card"
+                data-service-detail="permit-basic"
+                role="button"
+                tabindex="0"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+            >
+                <h3 class="service-card__title">
+                    Základní rozsah
+                </h3>
+
+                <p class="service-card__price">
+                    <span>od</span> 90 000 Kč
+                </p>
             </article>
 
-            <article class="service-card service-card--featured">
-                <h3 class="service-card__title">Standardní rozsah</h3>
-                <p class="service-card__price"><span>od</span> 160 000 Kč</p>
-                <button class="service-card__button" type="button"
-                        data-service-detail="permit-standard"
-                        aria-haspopup="dialog" aria-expanded="false">
-                    Podrobnosti
-                </button>
+
+            <article
+                class="service-card service-card--featured"
+                data-service-detail="permit-standard"
+                role="button"
+                tabindex="0"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+            >
+                <h3 class="service-card__title">
+                    Standardní rozsah
+                </h3>
+
+                <p class="service-card__price">
+                    <span>od</span> 160 000 Kč
+                </p>
             </article>
 
-            <article class="service-card">
-                <h3 class="service-card__title">Rozšířený rozsah</h3>
-                <p class="service-card__price"><span>od</span> 240 000 Kč</p>
-                <button class="service-card__button" type="button"
-                        data-service-detail="permit-extended"
-                        aria-haspopup="dialog" aria-expanded="false">
-                    Podrobnosti
-                </button>
+
+            <article
+                class="service-card"
+                data-service-detail="permit-extended"
+                role="button"
+                tabindex="0"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+            >
+                <h3 class="service-card__title">
+                    Rozšířený rozsah
+                </h3>
+
+                <p class="service-card__price">
+                    <span>od</span> 240 000 Kč
+                </p>
             </article>
 
         </div>
+
     </section>
 
+
+    <!-- PROJEKT PRO PROVÁDĚNÍ STAVBY -->
+
     <section class="services-section" aria-labelledby="execution-heading">
+
         <h2 class="services-section__title" id="execution-heading">
             Projekt pro provádění stavby
         </h2>
 
         <p class="services-section__description">
-    projekt vyžadovaný stavebním zákonem, vhodný pro méně starostí při samotné realizaci
-</p>
+            projekt vyžadovaný stavebním zákonem, vhodný pro méně starostí při samotné realizaci
+        </p>
 
-       <div class="services-grid services-grid--two">
+        <div class="services-grid services-grid--two">
 
-            <article class="service-card">
-                <h3 class="service-card__title">Základní rozsah</h3>
-                <p class="service-card__price"><span>od</span> 220 000 Kč</p>
-                <button class="service-card__button" type="button"
-                        data-service-detail="execution-basic"
-                        aria-haspopup="dialog" aria-expanded="false">
-                    Podrobnosti
-                </button>
+            <article
+                class="service-card"
+                data-service-detail="execution-basic"
+                role="button"
+                tabindex="0"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+            >
+                <h3 class="service-card__title">
+                    Základní rozsah
+                </h3>
+
+                <p class="service-card__price">
+                    <span>od</span> 220 000 Kč
+                </p>
             </article>
 
-            <article class="service-card service-card--featured">
-                <h3 class="service-card__title">Podrobný rozsah</h3>
-                <p class="service-card__price"><span>od</span> 300 000 Kč</p>
-                <button class="service-card__button" type="button"
-                        data-service-detail="execution-standard"
-                        aria-haspopup="dialog" aria-expanded="false">
-                    Podrobnosti
-                </button>
+
+            <article
+                class="service-card service-card--featured"
+                data-service-detail="execution-standard"
+                role="button"
+                tabindex="0"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+            >
+                <h3 class="service-card__title">
+                    Podrobný rozsah
+                </h3>
+
+                <p class="service-card__price">
+                    <span>od</span> 300 000 Kč
+                </p>
             </article>
 
-            
         </div>
+
     </section>
 
-    <section class="services-section services-section--additional"
-             aria-labelledby="additional-heading">
+
+    <!-- DALŠÍ SLUŽBY -->
+
+    <section
+        class="services-section services-section--additional"
+        aria-labelledby="additional-heading"
+    >
+
         <h2 class="services-section__title" id="additional-heading">
             Další služby
         </h2>
 
         <div class="additional-services-grid">
 
-            <article class="service-card service-card--compact">
-                <h3 class="service-card__title">Pasport stavby</h3>
-                <p class="service-card__price"><span>od</span> 20 000 Kč</p>
-                <button class="service-card__button" type="button"
-                        data-service-detail="passport"
-                        aria-haspopup="dialog" aria-expanded="false">
-                    Podrobnosti
-                </button>
+            <article
+                class="service-card service-card--compact"
+                data-service-detail="passport"
+                role="button"
+                tabindex="0"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+            >
+                <h3 class="service-card__title">
+                    Pasport stavby
+                </h3>
+
+                <p class="service-card__price">
+                    <span>od</span> 20 000 Kč
+                </p>
             </article>
 
-            <article class="service-card service-card--compact">
-                <h3 class="service-card__title">Projekt odstranění stavby</h3>
-                <p class="service-card__price"><span>od</span> 25 000 Kč</p>
-                <button class="service-card__button" type="button"
-                        data-service-detail="demolition"
-                        aria-haspopup="dialog" aria-expanded="false">
-                    Podrobnosti
-                </button>
+
+            <article
+                class="service-card service-card--compact"
+                data-service-detail="demolition"
+                role="button"
+                tabindex="0"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+            >
+                <h3 class="service-card__title">
+                    Projekt odstranění stavby
+                </h3>
+
+                <p class="service-card__price">
+                    <span>od</span> 25 000 Kč
+                </p>
             </article>
 
-            <article class="service-card service-card--compact">
-                <h3 class="service-card__title">Inženýrská činnost</h3>
-                <p class="service-card__price service-card__price--text"></span> 1 250 Kč/hod</p>
-                <button class="service-card__button" type="button"
-                        data-service-detail="engineering"
-                        aria-haspopup="dialog" aria-expanded="false">
-                    Podrobnosti
-                </button>
+
+            <article
+                class="service-card service-card--compact"
+                data-service-detail="engineering"
+                role="button"
+                tabindex="0"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+            >
+                <h3 class="service-card__title">
+                    Inženýrská činnost
+                </h3>
+
+                <p class="service-card__price service-card__price--text">
+                    1 250 Kč/hod
+                </p>
             </article>
 
-            <article class="service-card service-card--compact">
-                <h3 class="service-card__title">Autorský dozor</h3>
-                <p class="service-card__price service-card__price--text"></span> 1 250 Kč/hod</p>
-                <button class="service-card__button" type="button"
-                        data-service-detail="author-supervision"
-                        aria-haspopup="dialog" aria-expanded="false">
-                    Podrobnosti
-                </button>
+
+            <article
+                class="service-card service-card--compact"
+                data-service-detail="author-supervision"
+                role="button"
+                tabindex="0"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+            >
+                <h3 class="service-card__title">
+                    Autorský dozor
+                </h3>
+
+                <p class="service-card__price service-card__price--text">
+                    1 250 Kč/hod
+                </p>
             </article>
 
         </div>
+
     </section>
 
- </main>
+</main>
 
-<div class="service-modal" id="service-modal" aria-hidden="true">
-    <section class="service-modal__dialog"
-             role="dialog"
-             aria-modal="true"
-             aria-labelledby="service-modal-title"
-             tabindex="-1">
 
-        <button class="service-modal__close" type="button"
-                aria-label="Zavřít podrobnosti" data-modal-close>
+<!-- MODÁLNÍ OKNO -->
+
+<div
+    class="service-modal"
+    id="service-modal"
+    aria-hidden="true"
+>
+
+    <section
+        class="service-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="service-modal-title"
+        tabindex="-1"
+    >
+
+        <button
+            class="service-modal__close"
+            type="button"
+            aria-label="Zavřít podrobnosti"
+            data-modal-close
+        >
             ×
         </button>
 
-        <p class="service-modal__kicker" id="service-modal-kicker"></p>
-        <h2 class="service-modal__title" id="service-modal-title"></h2>
-        <div class="service-modal__content" id="service-modal-content"></div>
+        <p
+            class="service-modal__kicker"
+            id="service-modal-kicker"
+        ></p>
+
+        <h2
+            class="service-modal__title"
+            id="service-modal-title"
+        ></h2>
+
+        <div
+            class="service-modal__content"
+            id="service-modal-content"
+        ></div>
 
     </section>
+
 </div>
+
 
 <script src="js/navigation.js"></script>
 <script src="js/sluzby.js"></script>
