@@ -11,13 +11,6 @@
     text-align:center;
 }
 
-.contact-card h1{
-    margin:0 0 50px;
-    font-size:21px;
-    font-weight:300;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-}
 
 .contact-item{
     margin-bottom:36px;
@@ -92,10 +85,7 @@
         margin:110px auto 40px;
     }
 
-    .contact-card h1{
-        margin-bottom:40px;
-        font-size:20px;
-    }
+
 
     .contact-item{
         margin-bottom:32px;
