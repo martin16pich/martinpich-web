@@ -147,7 +147,6 @@
 }
 
 .service-card:hover{
-    transform:translateY(-3px);
 
     background:#111;
     border-color:#111;
