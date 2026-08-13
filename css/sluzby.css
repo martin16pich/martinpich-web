@@ -149,10 +149,27 @@
 .service-card:hover{
     transform:translateY(-3px);
 
-    border-color:#aaa;
+    background:#111;
+    border-color:#111;
 
     box-shadow:
-        0 12px 30px rgba(0,0,0,.065);
+        0 12px 30px rgba(0,0,0,.12);
+}
+
+.service-card:hover .service-card__title,
+.service-card:hover .service-card__price,
+.service-card:hover .service-card__price span{
+    color:#fff;
+}
+.service-card:active{
+    background:#111;
+    border-color:#111;
+}
+
+.service-card:active .service-card__title,
+.service-card:active .service-card__price,
+.service-card:active .service-card__price span{
+    color:#fff;
 }
 
 .service-card:focus-visible{
