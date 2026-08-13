@@ -23,7 +23,7 @@
 }
 
 .services-intro__subtitle{
-    margin:0 0 14px;
+    margin:0 0 0px;
     color:#111;
     font-size:21px;
     font-weight:300;
@@ -58,6 +58,15 @@
     text-transform:uppercase;
 }
 
+.services-section__description{
+    margin:-30px 0 18px;
+    color:#666;
+    font-size:16px;
+    font-weight:300;
+    line-height:1.5;
+    text-align:center;
+}
+
 .services-section__title::before,
 .services-section__title::after{
     content:"";
@@ -71,20 +80,24 @@
     grid-template-columns:repeat(3,minmax(0,1fr));
     gap:24px;
 }
-
+.services-grid--two{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    max-width:1000px;
+    margin:0 auto;
+}
 .additional-services-grid{
     display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:24px;
-    max-width:1050px;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:18px;
+    max-width:none;
     margin:0 auto;
 }
 
 .service-card{
     position:relative;
     display:flex;
-    min-height:120px;
-    padding:12px 24px;
+    min-height:100px;
+    padding:10px 24px;
     flex-direction:column;
     align-items:center;
     justify-content:flex-start;
@@ -107,7 +120,8 @@
 }
 
 .service-card--compact{
-    min-height:175px;
+    min-height:100px;
+    padding:10px 14px;
 }
 
 .service-card__badge{
@@ -125,7 +139,7 @@
 
 .service-card__title{
     max-width:100%;
-    margin:2px 0 8px;
+    margin:0 0 5px;
     font-size:21px;
     font-weight:300;
     letter-spacing:1.5px;
@@ -133,8 +147,15 @@
     text-transform:uppercase;
 }
 
+.service-card--compact .service-card__title{
+    max-width:100%;
+    white-space:normal;
+    text-align:center;
+    line-height:1.25;
+}
+
 .service-card__price{
-    margin:0 0 10px;
+    margin:0 0 5px;
     color:#111;
     font-size:21px;
     font-weight:300;
@@ -156,7 +177,7 @@
 .service-card__button{
     min-width:170px;
     margin-top:auto;
-    padding:7px 20px;
+    padding:5px 15px;
     border:1px solid #111;
     border-radius:2px;
     background:#fff;
@@ -174,16 +195,6 @@
     outline:none;
 }
 
-.services-note{
-    max-width:900px;
-    margin:10px auto 0;
-    padding-top:22px;
-    border-top:1px solid #ddd;
-    color:#666;
-    font-size:14px;
-    line-height:1.6;
-    text-align:center;
-}
 
 /* ==========================================
    MODÁLNÍ OKNO
@@ -348,6 +359,14 @@ body.modal-open{
         font-size:17px;
         line-height:1.35;
     }
+
+       .services-section__description{
+        margin:-8px auto 18px;
+        max-width:90%;
+        font-size:14px;
+        line-height:1.45;
+    }
+
 
     .services-section__title::before,
     .services-section__title::after{

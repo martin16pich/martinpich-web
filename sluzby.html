@@ -44,7 +44,7 @@
         <p class="services-intro__subtitle">Orientační ceny projektové dokumentace</p>
         <p class="services-intro__text">
             Uvedené ceny jsou orientační pro projekt rodinného domu. Přesný rozsah a cenu stanovím podle velikosti
-            stavby, složitosti řešení, vstupních podkladů a požadavků klienta.
+            stavby, složitosti řešení, vstupních podkladů a požadavků klienta. Ceny nezahrnují správní poplatky, geodetické podklady, průzkumy.
         </p>
     </header>
 
@@ -52,6 +52,9 @@
         <h2 class="services-section__title" id="permit-heading">
             Projekt pro povolení stavby
         </h2>
+        <p class="services-section__description">
+    projekt nutný k povolení stavby stavebním úřadem
+</p>
 
         <div class="services-grid">
 
@@ -67,7 +70,7 @@
 
             <article class="service-card service-card--featured">
                 <h3 class="service-card__title">Standardní rozsah</h3>
-                <p class="service-card__price"><span>od</span> 130 000 Kč</p>
+                <p class="service-card__price"><span>od</span> 160 000 Kč</p>
                 <button class="service-card__button" type="button"
                         data-service-detail="permit-standard"
                         aria-haspopup="dialog" aria-expanded="false">
@@ -77,7 +80,7 @@
 
             <article class="service-card">
                 <h3 class="service-card__title">Rozšířený rozsah</h3>
-                <p class="service-card__price"><span>od</span> 170 000 Kč</p>
+                <p class="service-card__price"><span>od</span> 240 000 Kč</p>
                 <button class="service-card__button" type="button"
                         data-service-detail="permit-extended"
                         aria-haspopup="dialog" aria-expanded="false">
@@ -93,11 +96,15 @@
             Projekt pro provádění stavby
         </h2>
 
-        <div class="services-grid">
+        <p class="services-section__description">
+    projekt vyžadovaný stavebním zákonem, vhodný pro méně starostí při samotné realizaci
+</p>
+
+       <div class="services-grid services-grid--two">
 
             <article class="service-card">
                 <h3 class="service-card__title">Základní rozsah</h3>
-                <p class="service-card__price"><span>od</span> 120 000 Kč</p>
+                <p class="service-card__price"><span>od</span> 220 000 Kč</p>
                 <button class="service-card__button" type="button"
                         data-service-detail="execution-basic"
                         aria-haspopup="dialog" aria-expanded="false">
@@ -106,8 +113,8 @@
             </article>
 
             <article class="service-card service-card--featured">
-                <h3 class="service-card__title">Standardní rozsah</h3>
-                <p class="service-card__price"><span>od</span> 180 000 Kč</p>
+                <h3 class="service-card__title">Podrobný rozsah</h3>
+                <p class="service-card__price"><span>od</span> 300 000 Kč</p>
                 <button class="service-card__button" type="button"
                         data-service-detail="execution-standard"
                         aria-haspopup="dialog" aria-expanded="false">
@@ -115,16 +122,7 @@
                 </button>
             </article>
 
-            <article class="service-card">
-                <h3 class="service-card__title">Podrobný rozsah</h3>
-                <p class="service-card__price"><span>od</span> 250 000 Kč</p>
-                <button class="service-card__button" type="button"
-                        data-service-detail="execution-detailed"
-                        aria-haspopup="dialog" aria-expanded="false">
-                    Podrobnosti
-                </button>
-            </article>
-
+            
         </div>
     </section>
 
@@ -138,7 +136,7 @@
 
             <article class="service-card service-card--compact">
                 <h3 class="service-card__title">Pasport stavby</h3>
-                <p class="service-card__price"><span>od</span> 15 000 Kč</p>
+                <p class="service-card__price"><span>od</span> 20 000 Kč</p>
                 <button class="service-card__button" type="button"
                         data-service-detail="passport"
                         aria-haspopup="dialog" aria-expanded="false">
@@ -158,7 +156,7 @@
 
             <article class="service-card service-card--compact">
                 <h3 class="service-card__title">Inženýrská činnost</h3>
-                <p class="service-card__price service-card__price--text">Individuálně</p>
+                <p class="service-card__price service-card__price--text"><span>od</span> 1 250 Kč/hod</p>
                 <button class="service-card__button" type="button"
                         data-service-detail="engineering"
                         aria-haspopup="dialog" aria-expanded="false">
@@ -168,7 +166,7 @@
 
             <article class="service-card service-card--compact">
                 <h3 class="service-card__title">Autorský dozor</h3>
-                <p class="service-card__price service-card__price--text">Dle hodinové sazby</p>
+                <p class="service-card__price service-card__price--text"><span>od</span> 1 250 Kč/hod</p>
                 <button class="service-card__button" type="button"
                         data-service-detail="author-supervision"
                         aria-haspopup="dialog" aria-expanded="false">
@@ -179,13 +177,7 @@
         </div>
     </section>
 
-    <p class="services-note">
-        Ceny nezahrnují správní poplatky, geodetické podklady, průzkumy,
-        samostatné profesní části ani další podklady, pokud nejsou výslovně
-        uvedeny v nabídce.
-    </p>
-
-</main>
+ </main>
 
 <div class="service-modal" id="service-modal" aria-hidden="true">
     <section class="service-modal__dialog"

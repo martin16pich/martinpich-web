@@ -1,10 +1,83 @@
-<!DOCTYPE html><html lang='cs'><head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>Kontakt | Martin Pich</title>
-<link rel="icon" type="image/png" href="images/favicon.png">
-<link rel='stylesheet' href='css/style.css'></head>
-<body><header><strong>Martin Pich</strong><nav>
-    <a href="omne.html">O mně</a><a href="projekty.html">Projekty</a><a href="jak-pracuji.html">Jak pracuji</a><a href="sluzby.html">Služby</a><a href="kontakt.html">Kontakt</a></nav></header>
-<main class='container'><h2>Kontakt</h2><p>Telefon • E-mail • Sídlo</p></main>
-<footer>&copy; Martin Pich</footer>
-<script src='js/main.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kontakt | Martin Pich</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+</head>
+
+<body>
+
+<header class="header show">
+    <div class="container">
+
+        <a href="index.html" class="logo" id="logo-link">
+            <img src="images/logo/LOGO_web.webp" alt="Martin Pich">
+        </a>
+
+        <nav class="navigation">
+            <a href="omne.html">O mně</a>
+            <a href="projekty.html">Projekty</a>
+            <a href="jak-pracuji.html">Jak pracuji</a>
+            <a href="sluzby.html">Služby</a>
+            <a href="kontakt.html" class="active">Kontakt</a>
+        </nav>
+
+        <button class="menu-toggle" type="button" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
+
+<main class="contact-page">
+
+    <section class="contact-card">
+
+        <h1>Kontakt</h1>
+
+        <div class="contact-item">
+            <span class="contact-label">Telefon</span>
+
+            <a href="tel:+420602967894">
+                +420 602 967 894
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <span class="contact-label">E-mail</span>
+
+            <a href="mailto:m.pich@email.cz">
+                m.pich@email.cz
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <span class="contact-label">Sídlo</span>
+
+            <a
+                href="https://mapy.com/cs/?q=Hronovská%20965%2C%20542%2033%20Rtyně%20v%20Podkrkonoší"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Hronovská 965, 542 33 Rtyně v Podkrkonoší
+            </a>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/navigation.js"></script>
+
+</body>
+</html>

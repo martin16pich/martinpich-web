@@ -10,19 +10,23 @@ const serviceDetails = {
                     "technické zprávy",
                     "situační výkresy",
                     "základní půdorysy, řezy a pohledy v černobílém tisku a v měřítku 1:100",
+                    "základní skladby konstrukcí",
                     "elektronické odevzdání v PDF"
                 ]
             },
             {
                 title: "Neobsahuje:",
                 items: [
+                    "statiku ani požárně bezpečnostní řešení stavby",
                     "řešení systémů TZB – vytápění, větrání, kanalizace, vodovod a elektroinstalace",
-                    "tisk projektu ani odevzdání vektorových dat",
-                    "poskytnutí 3D náhledů z modelu ani BIMx model"
+                    "energetické hodnocení stavby ani PENB",
+                    "rozpočet stavby",
+                    "poskytnutí 3D náhledů z modelu ani BIMx model",
+                    "tisk projektu ani odevzdání vektorových dat"
                 ]
             }
         ],
-        note: "Základní rozsah je určen především pro povolení stavby. Dokumentace není zpracována v podrobnosti potřebné pro samotnou realizaci."
+        note: "Základní rozsah je určen především pro povolení stavby. Je vhodný pro klienty, kteří mají svého statika a projektanta PBŘ."
     },
 
     "permit-standard": {
@@ -32,23 +36,27 @@ const serviceDetails = {
                 title: "Obsahuje:",
                 items: [
                     "všechny náležitosti základního rozsahu",
-                    "základní koordinaci stavební části s profesemi TZB",
-                    "zapracování hlavních požadavků profesních specialistů",
-                    "vybrané 3D náhledy z modelu",
-                    "BIMx model pro klienta",
+                    "konzultace s autory studie stavby",
+                    "statiku a požárně bezpečnostní řešení stavby - zpracované specializovanými projektanty",
+                    "základní rozvahu nad řešení systémů TZB",
+                    "3D náhledy z modelu",
                     "elektronické odevzdání v PDF"
+                    
                 ]
             },
             {
                 title: "Neobsahuje:",
                 items: [
-                    "podrobné stavební detaily pro realizaci",
-                    "kompletní výpisy výrobků a prvků",
-                    "podrobnou prováděcí dokumentaci profesí"
+                    "koordinaci TZB systémů ani jejich podrobné řešení",
+                    "energetické hodnocení stavby ani PENB",
+                    "rozpočet stavby",
+                    "BIMx model pro klienta",
+                    "tisk projektu ani odevzdání vektorových dat"
+                    
                 ]
             }
         ],
-        note: "Standardní rozsah je vhodný pro klienty, kteří chtějí už ve fázi povolení základně koordinovat stavební část s profesemi."
+        note: "Standardní rozsah je určen především pro povolení stavby. Je vhodný pro klienty, kteří potřebují projekt pro povolení stavby bez komplexní koordinace TZB systémů."
     },
 
     "permit-extended": {
@@ -58,23 +66,26 @@ const serviceDetails = {
                 title: "Obsahuje:",
                 items: [
                     "všechny náležitosti standardního rozsahu",
-                    "rozšířenou koordinaci stavební části a profesí",
-                    "základní skladby konstrukcí",
-                    "vybrané kritické návaznosti a detaily",
+                    "základní koordinaci TZB systémů, kdy jednotlivé profese zpracovávají specializovaní projektanti",
+                    "podrobnější skladby konstrukcí",
+                    "půdorysy, řezy a pohledy v černobílém tisku a v měřítku 1:50",
+                    "energetické hodnocení stavby včetně PENB",
                     "3D náhledy a BIMx model",
-                    "elektronické odevzdání v PDF"
+                    "elektronické odevzdání v PDF, odevzdání vektorových dat, tisk 1 paré dokumentace"
                 ]
             },
             {
                 title: "Neobsahuje:",
                 items: [
-                    "kompletní dokumentaci pro provádění stavby",
-                    "úplné výpisy všech prvků a výrobků",
-                    "detailní dokumentaci jednotlivých profesí"
+                    "rozpočet stavby",
+                    "projektovou dokumentaci pro provádění stavby",
+                    "výpisy dílčích prvků a výrobků",
+                    "detailní dokumentaci systémů TZB"
+                    
                 ]
             }
         ],
-        note: "Rozšířený rozsah lépe připravuje projekt pro navazující prováděcí dokumentaci."
+        note: "Rozšířený rozsah lépe připravuje projekt pro navazující prováděcí dokumentaci a v jistých případech se podle něho dá dům realizovat. Je vhodný pro klienty, kteří chtějí mít projekt domu více promyšlený a vyhnout se dodatečným změnám během realizace stavby."
     },
 
     "execution-basic": {
@@ -83,19 +94,25 @@ const serviceDetails = {
             {
                 title: "Obsahuje:",
                 items: [
-                    "podrobnější půdorysy, řezy a pohledy",
-                    "základní skladby konstrukcí",
-                    "vybrané stavební detaily",
-                    "základní výpisy prvků",
-                    "elektronické odevzdání v PDF"
+                    "podrobnější půdorysy, řezy a pohledy v barevném  tisku a v měřítku 1:50",
+                    "koordinaci TZB systémů, kdy jednotlivé profese zpracovávají specializovaní projektanti",
+                    "podrobnější skladby konstrukcí",
+                    "základní výpisy prvků (okna, dveře, překlady) ",
+                    "rozpočet stavby",
+                    "3D náhledy a BIMx model",
+                    "elektronické odevzdání v PDF, odevzdání vektorových dat, tisk 3 paré dokumentace",
+            
                 ]
             },
             {
                 title: "Neobsahuje:",
                 items: [
-                    "kompletní sadu stavebních detailů",
-                    "podrobné výpisy všech výrobků",
-                    "rozšířenou koordinaci všech profesí"
+                    "projekt pro povolení stavby",
+                    "stavební detaily",
+                    "výpis zámečnických výrobků - zábradlí, markýzy, pergoly",
+                    "výpis truhlářských výrobků - vnitřní parapety",
+                    "výpis klempířských výrobků - vnější parapety, oplechování střechy, okapy"
+        
                 ]
             }
         ],
@@ -108,157 +125,136 @@ const serviceDetails = {
             {
                 title: "Obsahuje:",
                 items: [
+                    "všechny náležitosti základního rozsahu",
                     "podrobné konstrukční řešení stavby",
-                    "skladby konstrukcí",
+                    "podrobné skladby konstrukcí včetně referenčních výrobků",
                     "stavební detaily",
-                    "výpisy prvků a výrobků",
-                    "koordinaci stavební části s profesemi",
-                    "podklady pro rozpočet a realizaci",
-                    "3D model a BIMx model pro klienta"
+                    "výpisy všech prvků a výrobků",
+                    "rozpočet stavby",              
+                    "3D náhledy a BIMx model",
+                    "elektronické odevzdání v PDF, odevzdání vektorových dat, tisk 3 paré dokumentace"
                 ]
             },
             {
                 title: "Neobsahuje:",
                 items: [
-                    "nadstandardní množství atypických detailů",
-                    "pravidelný autorský dozor během celé realizace",
-                    "samostatné projekty profesí, pokud nejsou součástí nabídky"
+                    "projekt interiéru - ten může zpracovat architekt",
+                   
+                    
                 ]
             }
         ],
-        note: "Standardní rozsah doporučuji jako podklad pro samotnou realizaci stavby."
+        note: "Podrobný rozsah doporučuji jako podklad pro samotnou realizaci stavby."
     },
 
-    "execution-detailed": {
-        kicker: "Projekt pro provádění stavby",
+   
+    "passport": {
+        kicker: "Pasport stavby",
+        hideTitle: true,
         sections: [
             {
                 title: "Obsahuje:",
                 items: [
-                    "všechny části standardního rozsahu",
-                    "větší množství stavebních detailů",
-                    "podrobnější výpisy prvků a výrobků",
-                    "rozšířenou koordinaci profesí",
-                    "podklady pro přesnější nacenění stavby",
-                    "průběžné konzultace při dopracování dokumentace"
-                ]
-            },
-            {
-                title: "Vhodné zejména pro:",
-                items: [
-                    "složitější novostavby",
-                    "rekonstrukce a stavební úpravy",
-                    "stavby s větším množstvím atypických řešení"
-                ]
-            }
-        ],
-        note: "Konkrétní rozsah podrobné dokumentace se vždy stanoví podle charakteru projektu."
-    },
-
-    "passport": {
-        kicker: "Další služby",
-        sections: [
-            {
-                title: "Může obsahovat:",
-                items: [
-                    "zaměření stávajícího stavu v dohodnutém rozsahu",
+                    "studium archivní dokumentace",
+                    "zaměření stávajícího stavu",
                     "půdorysy jednotlivých podlaží",
-                    "řezy a pohledy podle potřeby",
+                    "řezy a pohledy",
                     "základní technický popis stavby",
-                    "elektronické odevzdání v PDF"
+                    "elektronické odevzdání v PDF a tisk 1 paré dokumentace"
                 ]
             },
             {
-                title: "Cena závisí zejména na:",
+                title: "K čemu pasport slouží:",
                 items: [
-                    "velikosti a členitosti objektu",
-                    "kvalitě dostupných podkladů",
-                    "rozsahu zaměření",
-                    "požadované podrobnosti dokumentace"
+                    "základní vstup pro projekt stavebních úprav (rekonstrukce) i odstranění stavby",
+                    "podklad pro vypracování energetického hodnocení stavby a PENB",
+                    "podklad pro zpracování žádostí v dotačních programech"
+                   
                 ]
             }
         ],
-        note: "Pasport zachycuje stávající stav objektu a může sloužit jako podklad pro evidenci nebo další projektovou přípravu."
-    },
+           },
 
     "demolition": {
-        kicker: "Další služby",
+        kicker: "Projekt odstranění stavby",
+        hideTitle: true,
         sections: [
             {
-                title: "Může obsahovat:",
+                title: "Obsahuje:",
                 items: [
-                    "technickou zprávu",
-                    "situační výkres",
-                    "výkresy stávajícího stavu v potřebném rozsahu",
+                    "studium archivní dokumentace",
+                    "zaměření stávajícího stavu",
+                    "náležitosti podle vyhlášky o dokumentaci staveb",
+                    "technické zprávy",
+                    "situační výkresy",
+                    "výkresy stávajícího stavu",
                     "popis způsobu a postupu odstranění stavby",
-                    "základní řešení nakládání se stavebním odpadem",
-                    "elektronické odevzdání v PDF"
+                    "výpis předpokládaných odpadů a způsob jejich likvidace",
+                    "elektronické odevzdání v PDF a tisk 1 paré dokumentace"
                 ]
             },
             {
-                title: "Neobsahuje, není-li dohodnuto jinak:",
+                title: "K čemu projekt bouracích prací slouží:",
                 items: [
-                    "průzkumy nebezpečných materiálů",
-                    "odborné posudky a zvláštní průzkumy",
-                    "samotné provedení demolice"
+                    "před odstraněním stavby je ze zákona nutné demolici schválit stavebním úřadem"
                 ]
             }
         ],
-        note: "Cena se stanoví podle velikosti objektu, způsobu odstranění a požadovaného rozsahu dokumentace."
+       
     },
 
     "engineering": {
-        kicker: "Další služby",
+        kicker: "Inženýrská činnost",
+        hideTitle: true,
         sections: [
             {
-                title: "Může obsahovat:",
+                title: "Obsahuje:",
                 items: [
-                    "kompletaci podkladů pro podání žádosti",
-                    "komunikaci se stavebním úřadem",
-                    "zajištění stanovisek dotčených orgánů",
-                    "zajištění vyjádření správců technické infrastruktury",
+                   "zajištění stanovisek dotčených orgánů",
+                   "zajištění vyjádření správců technické infrastruktury",
+                    "kompletaci podkladů pro podání žádosti na stavební úřad",
+                    "komunikaci se stavebním úřadem",                  
                     "koordinaci doplnění požadovaných podkladů",
-                    "podání žádosti a sledování průběhu řízení"
+                    "podání žádosti, sledování průběhu řízení a informování stavebníka"
                 ]
             },
             {
-                title: "Cena závisí zejména na:",
+                title: "K čemu inženýrská činnost slouží:",
                 items: [
-                    "druhu a umístění stavby",
-                    "počtu potřebných stanovisek",
-                    "rozsahu zastupování klienta",
-                    "složitosti povolovacího procesu"
-                ]
+                    "zjednodušení a urychlení povolovacího procesu kdy zkušený inženýr zastupuje stavebníka",
+                  ]
+
+                  
+            },
+              {
+                title: "Pro koho inženýrskou činnost zpracovávám:",
+                items: [
+                    "pouze pro klienty, pro které jsem vypracovával projektovou dokumentaci",
+                  ]
+
+                  
             }
         ],
-        note: "Rozsah inženýrské činnosti se stanoví individuálně podle konkrétního projektu."
+     
     },
 
     "author-supervision": {
-        kicker: "Další služby",
+        kicker: "Autorský dozor",
+        hideTitle: true,
         sections: [
             {
-                title: "Může obsahovat:",
+                title: "Obsahuje:",
                 items: [
                     "kontrolu souladu provádění stavby s projektovou dokumentací",
                     "vysvětlení projektového řešení zhotoviteli",
                     "konzultace změn vzniklých během realizace",
                     "účast na vybraných kontrolních dnech",
-                    "konzultace stavebních detailů",
-                    "zápis doporučení a zjištění"
+                    "konzultace stavebních detailů"
                 ]
             },
-            {
-                title: "Nejedná se o:",
-                items: [
-                    "každodenní kontrolu stavby",
-                    "řízení zhotovitele",
-                    "kontrolu množství a ceny provedených prací",
-                    "technický dozor stavebníka"
-                ]
-            }
+           
         ],
-        note: "Rozsah a četnost autorského dozoru se sjednávají podle potřeb stavby."
+      
     }
 };
 
@@ -294,7 +290,14 @@ function openServiceModal(serviceId, trigger){
     lastFocusedElement = trigger;
 
     modalKicker.textContent = detail.kicker;
+
+   if(detail.hideTitle){
+    modalTitle.textContent = "";
+    modalTitle.style.display = "none";
+}else{
     modalTitle.textContent = card.querySelector(".service-card__title")?.textContent.trim() || "Podrobnosti";
+    modalTitle.style.display = "block";
+}
     modalContent.innerHTML = renderSections(detail.sections);
 
     if(detail.note){
