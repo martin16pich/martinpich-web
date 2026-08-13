@@ -355,17 +355,16 @@ body.modal-open{
     }
 
     .services-section__title{
-        gap:10px;
-        font-size:17px;
-        line-height:1.35;
-    }
+    justify-content:center;
+    text-align:center;
+    margin-bottom:6px;
+}
 
-       .services-section__description{
-        margin:-8px auto 18px;
-        max-width:90%;
-        font-size:14px;
-        line-height:1.45;
-    }
+.services-section__description{
+    margin:0 auto 12px;
+    max-width:90%;
+    text-align:center;
+}
 
 
     .services-section__title::before,
@@ -381,8 +380,8 @@ body.modal-open{
 
     .service-card,
     .service-card--compact{
-        min-height:220px;
-        padding:26px 22px;
+        min-height:140px;
+        padding:14px 18px;
     }
 
  .service-card__title{
