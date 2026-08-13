@@ -38,7 +38,7 @@ const serviceDetails = {
                     "všechny náležitosti základního rozsahu",
                     "konzultace s autory studie stavby",
                     "statiku a požárně bezpečnostní řešení stavby - zpracované specializovanými projektanty",
-                    "základní rozvahu nad řešení systémů TZB",
+                    "základní rozvahu řešení systémů TZB",
                     "3D náhledy z modelu",
                     "elektronické odevzdání v PDF"
                     
@@ -94,7 +94,7 @@ const serviceDetails = {
             {
                 title: "Obsahuje:",
                 items: [
-                    "podrobnější půdorysy, řezy a pohledy v barevném  tisku a v měřítku 1:50",
+                    "podrobnější půdorysy, řezy a pohledy v barevném tisku a v měřítku 1:50",
                     "koordinaci TZB systémů, kdy jednotlivé profese zpracovávají specializovaní projektanti",
                     "podrobnější skladby konstrukcí",
                     "základní výpisy prvků (okna, dveře, překlady) ",
