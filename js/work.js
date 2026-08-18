@@ -88,7 +88,7 @@ Odevzdává se převážně elektronicky.<br>
         text:`
 Projekt určený pro zpracování rozpočtu stavby a pro samotnou realizaci stavby.<br>
 Vyřeší se poslední úpravy projektu pro maximální spokojenost klienta.<br>
-Detailní projekt, který jde do detailů a obsahuje veškeré informace pro stavbu.<br>
+Projekt, který jde do detailů a obsahuje veškeré informace pro stavbu.<br>
 Odevzdává se tištěně i elektronicky.<br>
 
 `,
