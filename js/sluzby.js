@@ -407,9 +407,9 @@ const comparisonDetails = {
             ["DWG vektorová data", "no", "yes", "yes"],
             ["Tisk – 1 pare", "no", "yes", "yes"],
             ["Cena projektu",
-                 '<span class="price-prefix">od</span> <span class="price-number">180 000</span> <span class="price-currency">Kč</span>',
-                 '<span class="price-prefix">od</span> <span class="price-number">265 000</span> <span class="price-currency">Kč</span>',
-                 '<span class="price-prefix">od</span> <span class="price-number">395 000</span> <span class="price-currency">Kč</span>',
+                 '<span class="price-prefix">od</span> <span class="price-number">160 000</span> <span class="price-currency">Kč</span>',
+                 '<span class="price-prefix">od</span> <span class="price-number">240 000</span> <span class="price-currency">Kč</span>',
+                 '<span class="price-prefix">od</span> <span class="price-number">360 000</span> <span class="price-currency">Kč</span>',
                  "price"
 ]
         ],
@@ -490,9 +490,9 @@ const comparisonDetails = {
             ["Elektronické odevzdání", "yes", "yes", "yes"],
             ["Tisk – 3 pare", "yes", "yes", "yes"],
             ["Cena projektu",
-    '<span class="price-prefix">od</span> <span class="price-number">250 000</span> <span class="price-currency">Kč</span>',
-    '<span class="price-prefix">od</span> <span class="price-number">370 000</span> <span class="price-currency">Kč</span>',
-    '<span class="price-prefix">od</span> <span class="price-number">180 000</span> <span class="price-currency">Kč</span>',
+    '<span class="price-prefix">od</span> <span class="price-number">230 000</span> <span class="price-currency">Kč</span>',
+    '<span class="price-prefix">od</span> <span class="price-number">335 000</span> <span class="price-currency">Kč</span>',
+    '<span class="price-prefix">od</span> <span class="price-number">160 000</span> <span class="price-currency">Kč</span>',
     "price"
 ]
         ],
