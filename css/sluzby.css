@@ -809,6 +809,17 @@ body.modal-open{
     margin-bottom:32px;
 }
 
+.service-comparison__price-row .price-prefix,
+.service-comparison__price-row .price-number,
+.service-comparison__price-row .price-currency{
+    display:block;
+    white-space:nowrap;
+}
+
+.service-comparison__price-row td{
+    line-height:1.05;
+}
+
 
 }
 

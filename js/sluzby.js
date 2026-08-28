@@ -406,7 +406,12 @@ const comparisonDetails = {
             ["PDF", "yes", "yes", "yes"],
             ["DWG vektorová data", "no", "yes", "yes"],
             ["Tisk – 1 pare", "no", "yes", "yes"],
-            ["Cena projektu", "od 180 000 Kč", "od 265 000 Kč", "od 395 000 Kč", "price"]
+            ["Cena projektu",
+                 '<span class="price-prefix">od</span> <span class="price-number">180 000</span> <span class="price-currency">Kč</span>',
+                 '<span class="price-prefix">od</span> <span class="price-number">265 000</span> <span class="price-currency">Kč</span>',
+                 '<span class="price-prefix">od</span> <span class="price-number">395 000</span> <span class="price-currency">Kč</span>',
+                 "price"
+]
         ],
 
         legend: [
@@ -484,7 +489,12 @@ const comparisonDetails = {
             ["BIMx model", "yes", "yes", "yes"],
             ["Elektronické odevzdání", "yes", "yes", "yes"],
             ["Tisk – 3 pare", "yes", "yes", "yes"],
-            ["Cena projektu", "od 250 000 Kč", "od 370 000 Kč", "od 180 000 Kč", "price"]
+            ["Cena projektu",
+    '<span class="price-prefix">od</span> <span class="price-number">250 000</span> <span class="price-currency">Kč</span>',
+    '<span class="price-prefix">od</span> <span class="price-number">370 000</span> <span class="price-currency">Kč</span>',
+    '<span class="price-prefix">od</span> <span class="price-number">180 000</span> <span class="price-currency">Kč</span>',
+    "price"
+]
         ],
 
         legend: [
