@@ -836,14 +836,39 @@ body.modal-open{
         gap:12px;
     }
 
- .service-comparison__table{
-    font-size:13px;
+.service-comparison__table{
+    width:100%;
+    min-width:0;
+    table-layout:fixed;
+    font-size:12px;
 }
 
-    .service-comparison__table th,
-    .service-comparison__table td{
-        padding:6px;
-    }
+.service-comparison__table-wrap{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+/* první sloupec – názvy položek */
+.service-comparison__table th:first-child,
+.service-comparison__table td:first-child{
+    width:46%;
+    white-space:normal;
+}
+
+/* DSP / DSP+ / DSP-DPS */
+.service-comparison__table th:not(:first-child),
+.service-comparison__table td:not(:first-child){
+    width:18%;
+    min-width:0;
+    white-space:normal;
+}
+
+.service-comparison__table th,
+.service-comparison__table td{
+    padding:4px 3px;
+    line-height:1.15;
+}
 
     .service-comparison__legend{
         justify-content:flex-start;
@@ -851,6 +876,14 @@ body.modal-open{
         font-size:12px;
     }
 
+    .service-comparison__price-row td{
+    white-space:normal;
+    line-height:1.15;
+    overflow-wrap:normal;
+}
+    .service-comparison__symbol{
+        font-size:17px;
+    }
 }
 
 
