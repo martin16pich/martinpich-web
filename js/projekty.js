@@ -147,7 +147,7 @@ const projekty = {
          {
             id: "RD02",
 
-            title: "Řadový dům<br>Hradec Králoce - Malšovice",
+            title: "Řadový dům<br>Hradec Králové - Malšovice",
 
             image: "images/projekty/RODINNÉ DOMY/02_RD_Hradec_Kralove.jpg",
 

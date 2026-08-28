@@ -24,7 +24,7 @@ Studii já nezpracovávám, ale dokáži doporučit výborné architekty.
 
 <li>vyřešení dispozic místností dle potřeb klienta</li>
 
-<li>důležitý podklad pro další proječní činnost</li>
+<li>důležitý podklad pro další projekční činnost</li>
 
 </ul>
 
