@@ -371,7 +371,7 @@ const comparisonDetails = {
             {
                 label: "Kombinovaný projekt DSP/DPS",
                 text: [
-                    "podrobný projekt pro stavební povolení i provádění stavby s TZB systémy zpracovanými v prováděcím detailu, následně je možné zpracovat zjednodušenou DPS.",
+                    "podrobný projekt pro stavební povolení i provádění stavby s TZB systémy zpracovanými v prováděcím detailu, následně je možné zpracovat zjednodušenou DPS",
                     "většina technických a konstrukčních rozhodnutí se provede již při zpracování projektu pro povolení stavby",
                     "varianta je vhodná zejména tehdy, pokud se po dokončení DSP nepředpokládají významnější změny projektu"
                     
