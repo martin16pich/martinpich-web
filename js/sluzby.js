@@ -168,7 +168,49 @@ const serviceDetails = {
 
         note: "Podrobný rozsah doporučuji jako podklad pro samotnou realizaci stavby."
     },
+"package-basic": {
+    kicker: "Doporučené kombinace projektů",
 
+    sections: [
+        {
+            items: [
+                "kombinace rozšířeného projektu pro stavební povolení a základního prováděcího projektu",
+                "vhodné především pro jednodušší stavby",
+                "výhodou dvoufázového postupu je možnost projekt upravovat i po projednání s úřady"
+            ]
+        }
+    ]
+},
+
+
+"package-detailed": {
+    kicker: "Doporučené kombinace projektů",
+
+    sections: [
+        {
+            items: [
+                "kombinace rozšířeného projektu pro stavební povolení a podrobného prováděcího projektu",
+                "vhodné pro nejnáročnější klienty, kteří chtějí mít stavbu před realizací co nejpodrobněji naprojektovanou",
+                "výhodou dvoufázového postupu je možnost projekt upravovat i po projednání s úřady"
+            ]
+        }
+    ]
+},
+
+
+"package-combined": {
+    kicker: "Doporučené kombinace projektů",
+
+    sections: [
+        {
+            items: [
+                "téměř jednostupňový projekt – nejdůležitější části stavby jsou naprojektovány již v projektu pro povolení stavby a v navazující DPS se dopracují podrobnosti a detaily potřebné pro samotnou realizaci",
+                "většina technických a konstrukčních rozhodnutí se provede již při zpracování projektu pro povolení stavby",
+                "vhodné pro klienty, kteří mají jasnou představu o svém domě"
+            ]
+        }
+    ]
+},
 
     "passport": {
         kicker: "Pasport stavby",
@@ -505,9 +547,7 @@ function renderSections(sections){
 
         <section class="service-modal__section">
 
-            <h3>
-                ${section.title}
-            </h3>
+          ${section.title ? `<h3>${section.title}</h3>` : ""}
 
             <ul>
                 ${section.items
