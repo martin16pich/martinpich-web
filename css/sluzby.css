@@ -790,10 +790,15 @@ body.modal-open{
     text-align:center;
 }
 
-    .service-modal__close{
-        top:10px;
-        right:10px;
-    }
+   .service-modal__close{
+    position:sticky;
+    top:10px;
+    z-index:10;
+
+    margin-left:auto;
+    margin-right:0;
+    margin-bottom:-42px;
+}
 .project-packages-grid{
     grid-template-columns:1fr;
     gap:16px;
