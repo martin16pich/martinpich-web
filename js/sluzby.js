@@ -377,8 +377,7 @@ const comparisonDetails = {
 
     execution: {
         kicker: "Projekt pro provádění stavby",
-        title: "Porovnání variant",
-
+        
         intro: [
             "projekt vychází z projektu pro stavební povolení",
             "statiku, PBŘ a TZB systémy (vodovod, kanalizace, vytápění, vzduchotechnika, elektroinstalace) zpracovávají specialisté"
@@ -402,7 +401,7 @@ const comparisonDetails = {
             {
                 label: "Kombinovaný projekt DSP/DPS",
                 text: [
-                    "tato varianta je určena pouze jako pokračování efektivního projektu DSP/DPS",
+                    "tato varianta je určena pouze jako pokračování kombinovaného projektu DSP/DPS",
                     "navazující dokončení již podrobně zpracovaného projektu DSP/DPS pro realizaci stavby",
                     "projekt se doplní především o popisy, odkazy a výpisy jednotlivých prvků",
                     "statika a TZB systémy se znovu nezpracovávají – přebírají se z předchozí fáze",
