@@ -792,7 +792,7 @@ body.modal-open{
 
    .service-modal__close{
     position:sticky;
-    top:6x;
+    top:20x;
     z-index:10;
 
     margin-left:auto;
