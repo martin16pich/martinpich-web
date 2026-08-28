@@ -320,13 +320,19 @@ const comparisonDetails = {
             {
                 label: "Rozšířený projekt DSP+",
                 text: [
-                    "rozšířený projekt pro stavební povolení se základně vyřešenými TZB systémy"
+                    "rozšířený projekt pro stavební povolení, který vytváří kvalitní základ pro navazující projekt DPS",
+                    "TZB systémy jsou vyřešeny v rozsahu potřebném pro povolení stavby",
+                    "doporučená varianta při dvoustupňovém projektování - po povolení stavby zůstává prostor projekt dále upravit a teprve následně jej podrobně dopracovat pro realizaci"
+                    
                 ]
             },
             {
-                label: "Optimalizovaný projekt DSP/DPS",
+                label: "Kombinovaný projekt DSP/DPS",
                 text: [
-                    "podrobný projekt pro stavební povolení i provádění stavby s TZB systémy zpracovanými v prováděcím detailu, následně je možné zpracovat zjednodušenou DPS."
+                    "podrobný projekt pro stavební povolení i provádění stavby s TZB systémy zpracovanými v prováděcím detailu, následně je možné zpracovat zjednodušenou DPS.",
+                    "většina technických a konstrukčních rozhodnutí se provede již při zpracování projektu pro povolení stavby",
+                    "varianta je vhodná zejména tehdy, pokud se po dokončení DSP nepředpokládají významnější změny projektu"
+                    
                 ]
             }
         ],
@@ -388,14 +394,19 @@ const comparisonDetails = {
             {
                 label: "Podrobný projekt DPS+",
                 text: [
-                    "podrobný projekt pro provádění stavby"
+                    "podrobný projekt pro provádění stavby",
+                    "projekt se zpracovává až po získání stanovisek dotčených orgánů stavby, takže je možné zohlednit změny a zkušenosti získané během povolovacího procesu",
+                    "vhodná varianta pro klienty, kteří chtějí mít před zahájením stavby projekt co nejvíce dopracovaný a omezit rozhodování a improvizaci během realizace"
                 ]
             },
             {
-                label: "Optimalizovaný projekt DSP/DPS",
+                label: "Kombinovaný projekt DSP/DPS",
                 text: [
-                    "podrobný projekt pro provádění stavby, doplnění projektu DSP o popisy a výpisů prvků",
-                    "statika a TZB systémy budou převzaty z DSP"
+                    "tato varianta je určena pouze jako pokračování efektivního projektu DSP/DPS",
+                    "navazující dokončení již podrobně zpracovaného projektu DSP/DPS pro realizaci stavby",
+                    "projekt se doplní především o popisy, odkazy a výpisy jednotlivých prvků",
+                    "statika a TZB systémy se znovu nezpracovávají – přebírají se z předchozí fáze",
+                    
                 ]
             }
         ],
