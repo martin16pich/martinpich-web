@@ -292,6 +292,171 @@ const serviceDetails = {
 };
 
 
+
+
+/* ==========================================
+   POROVNÁVACÍ TABULKY DSP / DPS
+   ========================================== */
+
+const comparisonDetails = {
+
+    permit: {
+        kicker: "Projekt pro povolení stavby",
+       
+        intro: [
+            "projekt vychází z architektonické studie ",
+            "statiku, PBŘ, TZB systémy (vodovod, kanalizace, vytápění, vzduchotechnika, elektroinstalace) dopravní řešení a PENB zpracovávají specialisté"
+
+        ],
+
+        variants: [
+            {
+                label: "Základní projekt DSP",
+                text: [
+                    "základní projekt pro stavební úřad v minimálním rozsahu, na který nebudu navazovat projektem pro provádění stavby DPS",
+                    "hrozí riziko, že se bude muset před kolaudací dělat navíc ještě projekt „Změna stavby před dokončením“"
+                ]
+            },
+            {
+                label: "Rozšířený projekt DSP+",
+                text: [
+                    "rozšířený projekt pro stavební povolení se základně vyřešenými TZB systémy"
+                ]
+            },
+            {
+                label: "Optimalizovaný projekt DSP/DPS",
+                text: [
+                    "podrobný projekt pro stavební povolení i provádění stavby s TZB systémy zpracovanými v prováděcím detailu, následně je možné zpracovat zjednodušenou DPS."
+                ]
+            }
+        ],
+
+        projectLabels: ["DSP", "DSP+", "DSP/DPS"],
+
+        rows: [
+            ["Průvodní list", "yes", "yes", "yes"],
+            ["Souhrnná zpráva", "yes", "yes", "yes"],
+            ["Situační výkresy", "yes", "yes", "yes"],
+            ["Technická zpráva", "yes", "yes", "yes"],
+            ["Skladby konstrukcí", "no", "yes", "yes-detail"],
+            ["Měřítko výkresů", "1:100", "1:50", "1:50"],
+            ["Barevné rozlišení", "no", "no", "yes"],
+            ["Výkres výkopů", "no", "no", "yes-detail"],
+            ["Výkres základů", "yes", "yes", "yes-detail"],
+            ["Půdorysy podlaží", "yes", "yes", "yes"],
+            ["Výkres krovu", "yes", "yes", "yes-detail"],
+            ["Výkres střechy", "yes", "yes", "yes"],
+            ["Řezy", "yes", "yes", "yes"],
+            ["Pohledy", "yes", "yes", "yes"],
+            ["Statika", "yes", "yes", "yes-detail"],
+            ["PBŘ", "yes", "yes", "yes"],
+            ["TZB systémy", "no", "yes", "yes-detail"],
+            ["Dopravní řešení", "no", "yes", "yes"],
+            ["PENB", "no", "yes", "yes"],
+            ["3D náhledy na dům", "no", "yes", "yes"],
+            ["BIMx model", "no", "yes", "yes"],
+            ["PDF", "yes", "yes", "yes"],
+            ["DWG vektorová data", "no", "yes", "yes"],
+            ["Tisk – 1 pare", "no", "yes", "yes"],
+            ["Cena projektu", "od 180 000 Kč", "od 265 000 Kč", "od 395 000 Kč", "price"]
+        ],
+
+        legend: [
+            { type: "no", text: "neobsahuje" },
+            { type: "yes", text: "obsahuje" },
+            { type: "yes-detail", text: "obsahuje v prováděcím detailu" }
+        ]
+    },
+
+
+    execution: {
+        kicker: "Projekt pro provádění stavby",
+        title: "Porovnání variant",
+
+        intro: [
+            "projekt vychází z projektu pro stavební povolení",
+            "statiku, PBŘ a TZB systémy (vodovod, kanalizace, vytápění, vzduchotechnika, elektroinstalace) zpracovávají specialisté"
+        ],
+
+        variants: [
+            {
+                label: "Základní projekt DPS",
+                text: [
+                    "projektová dokumentace pro provádění stavby v základním rozsahu"
+                ]
+            },
+            {
+                label: "Podrobný projekt DPS+",
+                text: [
+                    "podrobný projekt pro provádění stavby"
+                ]
+            },
+            {
+                label: "Optimalizovaný projekt DSP/DPS",
+                text: [
+                    "podrobný projekt pro provádění stavby, doplnění projektu DSP o popisy a výpisů prvků",
+                    "statika a TZB systémy budou převzaty z DSP"
+                ]
+            }
+        ],
+
+        projectLabels: ["DPS", "DPS+", "DSP/DPS"],
+
+        rows: [
+            ["Průvodní list", "yes", "yes", "yes"],
+            ["Souhrnná zpráva", "yes", "yes", "yes"],
+            ["Situace", "yes", "yes", "yes"],
+            ["Technická zpráva", "yes", "yes", "yes"],
+            ["Skladby konstrukcí", "yes", "yes", "from-dsp"],
+            ["Měřítko výkresů", "1:50", "1:50", "1:50"],
+            ["Barevné rozlišení", "yes", "yes", "yes"],
+            ["Výkres výkopů", "yes", "yes", "from-dsp"],
+            ["Výkres základů", "yes", "yes", "from-dsp"],
+            ["Půdorysy podlaží", "yes", "yes", "from-dsp-id"],
+            ["Výkres krovu", "yes", "yes", "from-dsp"],
+            ["Výkres střechy", "yes", "yes", "from-dsp-id"],
+            ["Řezy", "yes", "yes", "from-dsp-id"],
+            ["Pohledy", "yes", "yes", "from-dsp-id"],
+            ["Detaily", "no", "yes", "yes"],
+            ["Výpisy oken a dveří", "yes", "yes", "yes"],
+            ["Výpis překladů", "yes", "yes", "yes"],
+            ["Výpis klempířských výrobků", "no", "yes", "yes"],
+            ["Výpis zámečnických prvků", "no", "yes", "yes"],
+            ["Výpis truhlářských prvků", "no", "yes", "yes"],
+            ["Výpis žaluzií", "no", "yes", "yes"],
+            ["Výpis ostatních prvků", "no", "yes", "yes"],
+            ["Statika", "yes", "yes", "from-dsp"],
+            ["PBŘ", "yes", "yes", "yes"],
+            ["TZB systémy ", "yes", "yes", "from-dsp"],
+            ["Rozpočet stavby", "no", "yes", "yes"],
+            ["3D náhledy na dům", "yes", "yes", "yes"],
+            ["BIMx model", "yes", "yes", "yes"],
+            ["Elektronické odevzdání", "yes", "yes", "yes"],
+            ["Tisk – 3 pare", "yes", "yes", "yes"],
+            ["Cena projektu", "od 250 000 Kč", "od 370 000 Kč", "od 180 000 Kč", "price"]
+        ],
+
+        legend: [
+            { type: "no", text: "neobsahuje" },
+            { type: "yes", text: "obsahuje" },
+            { type: "from-dsp", text: "obsahuje z DSP" },
+            { type: "from-dsp-id", text: "k výkresům z DSP doplněny popisky s odkazy na výpisy prvků" }
+        ]
+    }
+
+};
+
+
+const comparisonByService = {
+    "permit-basic": { detail: "permit", selectedColumn: 0 },
+    "permit-standard": { detail: "permit", selectedColumn: 1 },
+    "permit-extended": { detail: "permit", selectedColumn: 2 },
+    "execution-basic": { detail: "execution", selectedColumn: 0 },
+    "execution-standard": { detail: "execution", selectedColumn: 1 },
+    "execution-dsp-dps": { detail: "execution", selectedColumn: 2 }
+};
+
+
 /* ==========================================
    PRVKY STRÁNKY
 ========================================== */
@@ -347,17 +512,160 @@ function renderSections(sections){
 }
 
 
+function renderComparisonCell(value, selectedColumn, columnIndex){
+
+    const selectedClass =
+        selectedColumn === columnIndex
+            ? " is-selected"
+            : "";
+
+    if(typeof value === "string"){
+
+        if(value === "yes"){
+            return `<td class="service-comparison__cell service-comparison__cell--yes${selectedClass}"><span class="service-comparison__symbol" aria-label="obsahuje">✓</span></td>`;
+        }
+
+        if(value === "no"){
+            return `<td class="service-comparison__cell service-comparison__cell--no${selectedClass}"><span class="service-comparison__symbol" aria-label="neobsahuje">✕</span></td>`;
+        }
+
+        if(value === "yes-detail"){
+            return `<td class="service-comparison__cell service-comparison__cell--yes-detail${selectedClass}"><span class="service-comparison__symbol" aria-label="obsahuje v prováděcím detailu">✓</span></td>`;
+        }
+
+        if(value === "from-dsp"){
+            return `<td class="service-comparison__cell service-comparison__cell--from-dsp${selectedClass}"><span class="service-comparison__symbol" aria-label="obsahuje z DSP">✓</span></td>`;
+        }
+
+        if(value === "from-dsp-id"){
+            return `<td class="service-comparison__cell service-comparison__cell--from-dsp-id${selectedClass}"><span class="service-comparison__symbol" aria-label="k výkresům doplněny popisky s odkazy na výpisy prvků">✓</span></td>`;
+        }
+
+        return `<td class="service-comparison__cell${selectedClass}">${value}</td>`;
+    }
+
+    const type = value?.type || "";
+    const text = value?.text || "";
+    const typeClass = type ? ` service-comparison__cell--${type}` : "";
+    const symbol = type === "no" ? "✕" : "✓";
+    const aria = type === "no"
+        ? "neobsahuje"
+        : type === "from-dsp"
+            ? "obsahuje z DSP"
+            : type === "from-dsp-id"
+                ? "k výkresům doplněny popisky s odkazy na výpisy prvků"
+                : type === "yes-detail"
+                    ? "obsahuje v prováděcím detailu"
+                    : "obsahuje";
+
+    return `
+        <td class="service-comparison__cell${typeClass}${selectedClass}">
+            <span class="service-comparison__symbol" aria-label="${aria}">${symbol}</span>${text ? `<span class="service-comparison__cell-note">${text}</span>` : ""}
+        </td>
+    `;
+}
+
+
+function renderComparisonLegendItem(item){
+
+    let symbol = "✓";
+    let className = "service-comparison__legend-symbol--yes";
+
+    if(item.type === "no"){
+        symbol = "✕";
+        className = "service-comparison__legend-symbol--no";
+    }
+    else if(item.type === "yes-detail"){
+        className = "service-comparison__legend-symbol--yes-detail";
+    }
+    else if(item.type === "from-dsp"){
+        className = "service-comparison__legend-symbol--from-dsp";
+    }
+    else if(item.type === "from-dsp-id"){
+        className = "service-comparison__legend-symbol--from-dsp-id";
+    }
+
+    return `
+        <span class="service-comparison__legend-item">
+            <span class="service-comparison__legend-symbol ${className}">${symbol}</span>
+            <span>= ${item.text}</span>
+        </span>
+    `;
+}
+
+
+function renderComparison(detail, selectedColumn){
+
+    const variants = detail.variants.map(variant => `
+        <div class="service-comparison__variant">
+            <strong>${variant.label}:</strong>
+            <ul>
+                ${variant.text.map(item => `<li>${item}</li>`).join("")}
+            </ul>
+        </div>
+    `).join("");
+
+    const bodyRows = detail.rows.map(row => {
+
+        const isPrice = row[4] === "price";
+
+        return `
+            <tr class="${isPrice ? "service-comparison__price-row" : ""}">
+                <th scope="row">${row[0]}</th>
+                ${renderComparisonCell(row[1], selectedColumn, 0)}
+                ${renderComparisonCell(row[2], selectedColumn, 1)}
+                ${renderComparisonCell(row[3], selectedColumn, 2)}
+            </tr>
+        `;
+
+    }).join("");
+
+    return `
+        <div class="service-comparison">
+
+            <div class="service-comparison__intro">
+                <ul class="service-comparison__intro-list">
+                    ${detail.intro.map(item => `<li>${item}</li>`).join("")}
+                </ul>
+
+                <div class="service-comparison__variants">
+                    ${variants}
+                </div>
+            </div>
+
+             <div class="service-comparison__legend" aria-label="Vysvětlivky">
+                <span class="service-comparison__legend-title">Vysvětlivky:</span>
+                ${detail.legend.map(renderComparisonLegendItem).join("")}
+            </div>
+
+            <div class="service-comparison__table-wrap" tabindex="0" aria-label="Porovnávací tabulka variant projektu">
+                <table class="service-comparison__table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Označení projektu</th>
+                            ${detail.projectLabels.map((label, index) => `<th scope="col" class="${selectedColumn === index ? "is-selected" : ""}">${label}</th>`).join("")}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${bodyRows}
+                    </tbody>
+                </table>
+            </div>
+
+           
+
+        </div>
+    `;
+}
+
+
 /* ==========================================
    OTEVŘENÍ MODÁLU
 ========================================== */
 
 function openServiceModal(serviceId, card){
 
-    const detail =
-        serviceDetails[serviceId];
-
     if(
-        !detail ||
         !modal ||
         !dialog ||
         !card
@@ -365,48 +673,70 @@ function openServiceModal(serviceId, card){
         return;
     }
 
+    const comparisonConfig = comparisonByService[serviceId];
+    const comparisonDetail = comparisonConfig
+        ? comparisonDetails[comparisonConfig.detail]
+        : null;
+    const detail = serviceDetails[serviceId];
+
+    if(!comparisonDetail && !detail){
+        return;
+    }
+
     lastFocusedElement = card;
 
-    modalKicker.textContent =
-        detail.kicker;
+    if(comparisonDetail){
 
+        dialog.classList.add("service-modal__dialog--comparison");
 
-    if(detail.hideTitle){
+        modalKicker.textContent = comparisonDetail.kicker;
+        modalTitle.textContent = comparisonDetail.title;
+        modalTitle.style.display = "block";
 
-        modalTitle.textContent = "";
-        modalTitle.style.display = "none";
+        modalContent.innerHTML = renderComparison(
+            comparisonDetail,
+            comparisonConfig.selectedColumn
+        );
 
     }else{
 
-        modalTitle.textContent =
-            card
-                .querySelector(".service-card__title")
-                ?.textContent
-                .trim() || "";
+        dialog.classList.remove("service-modal__dialog--comparison");
 
-        modalTitle.style.display =
-            "block";
+        modalKicker.textContent = detail.kicker;
+
+        if(detail.hideTitle){
+
+            modalTitle.textContent = "";
+            modalTitle.style.display = "none";
+
+        }else{
+
+            modalTitle.textContent =
+                card
+                    .querySelector(".service-card__title")
+                    ?.textContent
+                    .trim() || "";
+
+            modalTitle.style.display = "block";
+
+        }
+
+        modalContent.innerHTML = renderSections(detail.sections);
+
+        if(detail.note){
+
+            modalContent.insertAdjacentHTML(
+                "beforeend",
+                `
+                <p class="service-modal__note">
+                    ${detail.note}
+                </p>
+                `
+            );
+
+        }
 
     }
-
-
-    modalContent.innerHTML =
-        renderSections(detail.sections);
-
-
-    if(detail.note){
-
-        modalContent.insertAdjacentHTML(
-            "beforeend",
-            `
-            <p class="service-modal__note">
-                ${detail.note}
-            </p>
-            `
-        );
-
-    }
-
 
     card.setAttribute(
         "aria-expanded",
@@ -427,7 +757,6 @@ function openServiceModal(serviceId, card){
     );
 
     dialog.scrollTop = 0;
-
 
     requestAnimationFrame(() => {
         dialog.focus();

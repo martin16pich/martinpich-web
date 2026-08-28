@@ -424,6 +424,225 @@ body.modal-open{
 }
 
 
+
+
+/* ==========================================
+   POROVNÁVACÍ TABULKA V MODÁLU
+========================================== */
+
+.service-modal__dialog--comparison{
+    width:min(1260px,100%);
+    padding:42px 40px 34px;
+}
+
+.service-modal__dialog--comparison .service-modal__title{
+    margin-bottom:24px;
+}
+
+.service-comparison__intro{
+    max-width:1080px;
+    margin:0 auto 26px;
+    color:#333;
+}
+
+.service-comparison__intro-list{
+    margin:0;
+    padding-left:22px;
+    line-height:1.5;
+}
+
+.service-comparison__intro-list li{
+    margin:5px 0;
+}
+
+.service-comparison__variants{
+    display:grid;
+    gap:10px;
+    margin-top:20px;
+}
+
+.service-comparison__variant strong{
+    display:block;
+    margin-bottom:2px;
+    font-size:16px;
+    font-weight:600;
+}
+
+.service-comparison__variant ul{
+    margin:0;
+    padding-left:22px;
+    line-height:1.45;
+}
+
+.service-comparison__variant li{
+    margin:3px 0;
+}
+
+.service-comparison__table-wrap{
+    width:max-content;
+    max-width:100%;
+    margin:0 auto;
+    overflow-x:auto;
+    overscroll-behavior-inline:contain;
+    border:1px solid #8f8f8f;
+    background:#fff;
+}
+
+.service-comparison__table-wrap:focus-visible{
+    outline:2px solid #777;
+    outline-offset:3px;
+}
+
+.service-comparison__table{
+    width:auto;
+    min-width:0;
+    border-collapse:collapse;
+    table-layout:auto;
+    font-size:14px;
+}
+
+.service-comparison__table th,
+.service-comparison__table td{
+    padding:2px 8px;
+    line-height:1.1;
+    white-space:nowrap;
+
+    border-bottom:1px solid #c4c4c4;
+    border-right:1px solid #c4c4c4;
+}
+
+.service-comparison__table tr > *:last-child{
+    border-right:0;
+}
+
+.service-comparison__table tbody tr:last-child > *{
+    border-bottom:0;
+}
+
+.service-comparison__table thead th{
+    background:#e2e2e2;
+    font-weight:400;
+    text-align:center;
+}
+
+.service-comparison__table th:first-child,
+.service-comparison__table td:first-child{
+    width:auto;
+}
+
+.service-comparison__table th:not(:first-child),
+.service-comparison__table td:not(:first-child){
+    width:1%;
+    white-space:nowrap;
+}
+
+.service-comparison__table tbody th{
+    width:1%;
+    white-space:nowrap;
+    font-weight:400;
+    text-align:left;
+    line-height:1.15;
+}
+
+.service-comparison__cell{
+    text-align:center;
+    white-space:nowrap;
+}
+
+.service-comparison__table .is-selected{
+    background:#f4f4f4;
+}
+
+.service-comparison__table thead .is-selected{
+    background:#d7d7d7;
+    font-weight:600;
+}
+
+.service-comparison__symbol{
+    font-size:18px;
+    font-weight:700;
+    line-height:1;
+}
+
+.service-comparison__cell--yes{
+    color:#00a94f;
+}
+
+.service-comparison__cell--yes-detail{
+    color:#e6a800;
+}
+
+.service-comparison__cell--no{
+    color:#e11;
+}
+
+.service-comparison__cell--from-dsp{
+    color:#e6a800;
+}
+
+.service-comparison__cell--from-dsp-id{
+    color:#00a6df;
+}
+
+.service-comparison__cell-note{
+    margin-left:2px;
+    font-size:13px;
+    font-weight:400;
+}
+
+.service-comparison__price-row th,
+.service-comparison__price-row td{
+    background:#e2e2e2;
+    font-weight:500;
+}
+
+.service-comparison__price-row td.is-selected{
+    background:#d7d7d7;
+}
+
+.service-comparison__legend{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:4px 10px;
+    margin:0 auto 4px;
+    font-size:13px;
+    font-style:italic;
+    line-height:1.4;
+}
+
+.service-comparison__legend-title{
+    font-weight:500;
+}
+
+.service-comparison__legend-item{
+    display:inline-flex;
+    gap:3px;
+}
+
+.service-comparison__legend-symbol{
+    font-style:normal;
+    font-weight:700;
+}
+
+.service-comparison__legend-symbol--yes{
+    color:#00a94f;
+}
+
+.service-comparison__legend-symbol--no{
+    color:#e11;
+}
+
+.service-comparison__legend-symbol--yes-detail,
+.service-comparison__legend-symbol--from-dsp{
+    color:#e6a800;
+}
+
+.service-comparison__legend-symbol--from-dsp-id{
+    color:#00a6df;
+}
+
+
 /* ==========================================
    MOBIL
 ========================================== */
@@ -539,6 +758,47 @@ body.modal-open{
     .service-modal__close{
         top:10px;
         right:10px;
+    }
+
+}
+
+
+
+
+@media (max-width:900px){
+
+    .service-modal__dialog--comparison{
+        padding:52px 14px 24px;
+    }
+
+    .service-modal__dialog--comparison .service-modal__kicker,
+    .service-modal__dialog--comparison .service-modal__title{
+        padding:0 34px;
+    }
+
+    .service-comparison__intro{
+        padding:0 4px;
+        margin-bottom:20px;
+        font-size:14px;
+    }
+
+    .service-comparison__variants{
+        gap:12px;
+    }
+
+ .service-comparison__table{
+    font-size:13px;
+}
+
+    .service-comparison__table th,
+    .service-comparison__table td{
+        padding:6px;
+    }
+
+    .service-comparison__legend{
+        justify-content:flex-start;
+        padding:0 4px;
+        font-size:12px;
     }
 
 }
