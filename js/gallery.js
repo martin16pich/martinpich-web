@@ -181,47 +181,40 @@ function vytvorMiniatury() {
 
     const seznam = projekty[kategorie];
 
-    const visible = 5;
+    const visible = Math.min(5, seznam.length);
 
-    for (let slot = 0; slot < visible; slot++) {
+    // Začátek okna miniatur
+    // Projekty 1–5 zůstávají na místě.
+    // Od projektu 6 se okno posouvá vždy o jednu pozici.
+    const start = Math.max(
+        0,
+        Math.min(
+            aktualni - visible + 1,
+            seznam.length - visible
+        )
+    );
 
-        const index =
-            (
-                aktualni -
-                2 +
-                slot +
-                seznam.length
-            ) % seznam.length;
+    const end = start + visible;
+
+    for (let index = start; index < end; index++) {
 
         const projekt = seznam[index];
 
-        const img =
-            document.createElement("img");
+        const img = document.createElement("img");
 
-        img.src =
-            getThumbImage(projekt.image);
-
+        img.src = getThumbImage(projekt.image);
         img.alt = projekt.title;
 
-
         if (index === aktualni) {
-
             img.classList.add("active");
-
         }
 
-
         img.addEventListener("click", () => {
-
             zobrazProjekt(index);
-
         });
 
-
         thumbs.appendChild(img);
-
     }
-
 }
 
 
